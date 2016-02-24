@@ -63,9 +63,6 @@
             print "Section 5 using a for loop to display the content of an array";
             print "<BR>";
             print "<BR>";
-            for ($i = 0; $i<=1;$i++) {
-                echo($provisionedActivities[$i] . "  ");
-            }
             $availability = array("Nothing is available", "Specs are available", "Mugs are available", "Specs and Sausage Rolls are available");
             $counter = 1;
             for ($i=0; $i<=31; $i++) {
