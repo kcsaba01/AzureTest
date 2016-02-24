@@ -40,7 +40,7 @@
                     echo "You are old :)";
                     break;
                 default:
-                    echo "no defaults here";
+                    echo "no defaults here ";
             }
             ?>
         </p>
