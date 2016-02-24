@@ -11,11 +11,14 @@
       <body>
         <p>
             <?php
-            echo "Hello World";
-            echo "<BR>";
-            echo "Hello," .  " " . "world" . "!";
-            echo "<BR>";
-            echo 5*7;
+            echo "Hello World!";
+            //echo "<BR>";
+            //echo "Hello," .  " " . "world" . "!";
+            //echo "<BR>";
+            //echo 5*7;
+            $myname = "Frodo";
+            $myage = 111;
+            echo "Your name is: " . $myname . " and you are " . $myage . " years old!";
             ?>
         </p>
       </body>
