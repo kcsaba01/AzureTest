@@ -65,7 +65,7 @@
             print "<BR>";
             $availability = array("Nothing is available", "Specs are available", "Mugs are available", "Specs and Sausage Rolls are available");
             $counter = 1;
-            for ($i=0; $i<=31; $i++) {
+            for ($i=0; $i<=30; $i++) {
                 $counter =$i;
                 while ($counter > 3) {
                 $counter=$counter - 4;
