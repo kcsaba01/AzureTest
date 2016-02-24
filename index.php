@@ -12,6 +12,10 @@
         <p>
             <?php
             echo "Hello World";
+            echo "<CR>";
+            echo "Hello," .  " " . "world" . "!";
+            echo "<CR>";
+            echo 5*7;
             ?>
         </p>
       </body>
