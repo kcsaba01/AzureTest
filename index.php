@@ -17,7 +17,7 @@
             //echo "<BR>";
             //echo 5*7;
             $myname = "Frodo";
-            $myage = 111;
+            $myage = 44;
             echo "Your name is: " . $myname . " and you are " . $myage . " years old!";
             echo "<BR>";
             echo "<BR>";
