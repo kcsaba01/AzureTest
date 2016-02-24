@@ -27,6 +27,21 @@
             else {
                 print "Who are you?";
             }
+            echo "<BR>";
+            echo "<BR>";
+            switch ($myage) {
+                case ($myage<=18):
+                    echo "you are a child";
+                    break;
+                case ($myage<=65) and ($myage >18):
+                    echo "You are an adult";
+                    break;
+                case ($myage>65):
+                    echo "You are old :)";
+                    break;
+                default:
+                    echo "no defaults here";
+            }
             ?>
         </p>
       </body>
