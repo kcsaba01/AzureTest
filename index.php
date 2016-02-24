@@ -42,6 +42,14 @@
                 default:
                     echo "no defaults here ";
             }
+            echo "<BR>";
+            echo "<BR>";
+            //section 4
+            $provisionedActivities = array("Specs", "Drugs","Roll");
+            foreach($provisionedActivities as $x) {
+                print "<p> $x </p>p>";
+            }
+
             ?>
         </p>
       </body>
