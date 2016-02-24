@@ -49,7 +49,16 @@
             foreach($provisionedActivities as $x) {
                 print "<p> $x </p>";
             }
-
+            $provisionedActivities[1] = "hugs";
+            foreach($provisionedActivities as $x) {
+                print "<p> $x </p>";
+            }
+            print "  After replacing Drugs with hugs";
+            unset($provisionedActivities[2]);
+            foreach($provisionedActivities as $x) {
+                print "<p> $x </p>";
+            }
+            print "After deleting Rolls";
             ?>
         </p>
       </body>
