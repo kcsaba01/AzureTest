@@ -73,7 +73,7 @@
                 while ($counter > 3) {
                 $counter=$counter - 4;
                 }
-                echo "It's day " . $i . " today " . $availability[$counter];
+                echo "It's day " . (1 + $i) . " today " . $availability[$counter] . "<BR>";
             }
             ?>
         </p>
