@@ -59,6 +59,12 @@
                 print "<p> $x </p>";
             }
             print "After deleting Rolls";
+            //section 5
+            print "<BR>";
+            print "<BR>";
+            for ($i = 0; $i<=1;$i++) {
+                echo($provisionedActivities[$i] . "  ");
+            }
             ?>
         </p>
       </body>
