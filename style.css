@@ -40,8 +40,8 @@ body
 }
 .loginBox h3
 {
-	background-color:#63C;
-	color:#FFF;
+	background-color:darkblue;
+	color:lightgray;
 	text-align:center;
 	padding:15px;
 	border-radius: 10px 10px 0 0;
