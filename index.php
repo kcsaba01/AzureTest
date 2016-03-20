@@ -14,11 +14,9 @@
 <title>Welcome to NoName Company</title>
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
-
-
 <body>
     <header>
-       <table style="width:100%">
+       <table border=1 style="width:100%; border-top:10px black">
         <tr>
             <td><img id="bus_logo" height=150 src="businesslogo.png" alt="NoName Company Logo"/></td>
             <td><H1 align="right"><i>Welcome to NoName Company</i></H1></td>
@@ -31,7 +29,7 @@
     </main>
 </body>
     <footer>
-        <table border=1 style="width:100%; border-top:5px black"></table>
+        <table border=1 style="width:100%; border-top:10px black"></table>
                <th> Contact Helpdesk</th>
                 <th><H1 align="right"> Login/Registration page</H1></th>
     </footer>
