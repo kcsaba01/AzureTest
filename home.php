@@ -19,7 +19,7 @@
 <header>
     <table class="bottomBorder" style="width:100%">
         <tr>
-            <th><img align="left" id="bus_logo" height=150 src="businesslogo.png" alt="NoName Company Logo" <a href="index.php">/></th>
+            <th><a href="index.php"> <img align="left" id="bus_logo" height=150 src="businesslogo.png" alt="NoName Company Logo" /></th>
             <th><H1 align="right"><i>Welcome to NoName Company</i></H1></th>
         </tr>
     </table>
