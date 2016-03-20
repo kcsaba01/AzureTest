@@ -18,7 +18,7 @@
 
 <body>
     <header>
-    <img id="bus_logo" src="businesslogo.jpeg" alt="NoName Company Logo"/>
+    <img id="bus_logo" src="businesslogo.png" alt="NoName Company Logo"/>
     <div class="Page_title">
         <H1> NoName Company</H1>
     </div>
