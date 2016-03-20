@@ -16,7 +16,7 @@
 </head>
 <body>
     <header>
-       <table class="bottomBorder" style="width:100%; border-bottom:10px black">
+       <table class="bottomBorder" style="width:100%">
          <tr>
              <th><img align="left" id="bus_logo" height=150 src="businesslogo.png" alt="NoName Company Logo"/></th>
              <th><H1 align="right"><i>Welcome to NoName Company</i></H1></th>
@@ -28,7 +28,7 @@
     </main>
 </body>
     <footer>
-        <table border=1 style="width:100%; border-top:10px black">
+        <table class="topBorder" style="width:100%">
          <tr>
             <th> Contact Helpdesk</th>
             <th><H1 align="right"> Login/Registration page</H1></th>
