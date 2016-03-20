@@ -29,8 +29,7 @@ include("submit.php");
 <main>
 <form method="post" action="">
     <fieldset>
-        <legend>Registration Form</legend>
-        <table width="400" border="0" cellpadding="10" cellspacing="10">
+        <table width="100%" allign =center border="0" cellpadding="10" cellspacing="10">
             <tr>
                 <td colspan="2" align="center" class="error"><?php echo $msg;?></td>
             </tr>
@@ -39,7 +38,7 @@ include("submit.php");
                     <div align="right"><label for="name">Username</label></div>
                 </td>
                 <td>
-                    <input name="name" type="text" class="input" size="25"  required />>
+                    <input name="name" type="text" class="input" size="35"  required />>
                 </td>
             </tr>
             <tr>
