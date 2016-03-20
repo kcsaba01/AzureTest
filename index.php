@@ -16,7 +16,7 @@
 </head>
 <body>
     <header>
-       <table border=1 style="width:100%; border-bottom:10px black">
+       <table style="width:100%; border-bottom:10px black">
          <tr>
              <th><img id="bus_logo" height=150 src="businesslogo.png" alt="NoName Company Logo"/></th>
              <th><H1 align="right"><i>Welcome to NoName Company</i></H1></th>
