@@ -37,10 +37,10 @@ else
             <br><br>
             <table style="width:300">
                 <tr>
-                    <td><a href="authorise_users.php"> <H2 align=center style="color:lightgray; background-color: black ">Authorise Users</H2></td>
+                    <td><a href="authorise_users.php"> <H2 align=center style="color:lightgray; background-color: black; font-size: 32px">Authorise Users</H2></td>
                 </tr>
                 <tr>
-                    <td><a href="review_bugs.php"> <H2 align=center style="color:lightgray; background-color: black ">Review Bugs</H2></td>
+                    <td><a href="review_bugs.php"> <H2 align=center style="color:lightgray; background-color: black; font-size: 32px ">Review Bugs</H2></td>
                 </tr>
             </table>
 
