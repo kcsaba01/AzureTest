@@ -31,7 +31,7 @@
     </main>
 </body>
     <footer>
-        <table style="width:100% border-top:5px"
+        <table style="width:100%; border-top:5px black"></table>
                <th> Contact Helpdesk</th>
                 <th><H1 align="right"> Login/Registration page</H1></th>
     </footer>
