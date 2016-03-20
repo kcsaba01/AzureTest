@@ -32,7 +32,7 @@ else
 <main>
     <div align="center">
         <br><br>
-        <div class="loginBox">
+        <div class="adminBox">
             <h3>Select Task</h3>
             <br><br>
             <form method="post" action="">
