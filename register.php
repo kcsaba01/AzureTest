@@ -63,11 +63,11 @@ include("submit.php");
             <tr>
                 <td height="23" style="font-weight: bold">
                     <div align="right">
-                        <label for="phone">Phone</label>
+                        <label for="phone">Phone (1000..9999)</label>
                     </div>
                 </td>
                 <td>
-                    <input name="phone" type="number" class="input" size="35" required />
+                    <input name="phone" type="number" min=1000 max=9999 class="input" size="35" required />
                 </td>
         </tr>
             <tr>
