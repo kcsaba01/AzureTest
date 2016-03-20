@@ -5,7 +5,7 @@ table.bottomBorder
 table.bottomBorder td,
 table.bottomBorder th
 {
-	border-bottom: 1px solid yellowgreen;
+	border-bottom: 1px solid lightgray;
 	padding:5px;
 }
 table.topBorder
@@ -15,7 +15,7 @@ table.topBorder
 table.topBorder td,
 table.topBorder th
 {
-	border-top: 1px solid yellowgreen;
+	border-top: 1px solid lightgray;
 	padding:5px;
 }
 H1
