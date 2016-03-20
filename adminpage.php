@@ -35,9 +35,12 @@ else
         <div class="adminBox">
             <h3>Select Task</h3>
             <br><br>
-            <table border=1 style="width:200">
+            <table border=1 style="width:250">
                 <tr>
-                    <td><a href="authorise_users.php"> <H2 style="color:lightgray; background-color: black">Authorise Users</H2></td>
+                    <td><a href="authorise_users.php"> <H2 style="color:lightgray; background-color: black ">Authorise Users</H2></td>
+                </tr>
+                <tr>
+                    <td><a href="review_bugs.php"> <H2 style="color:lightgray; background-color: black ">Review Bugs</H2></td>
                 </tr>
             </table>
 
