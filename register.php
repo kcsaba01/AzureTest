@@ -30,7 +30,7 @@ include("submit.php");
                     <div align="right"><label for="name">Username</label></div>
                 </td>
                 <td>
-                    <input name="name" type="text" class="input" size="25" <?php $_POST["username"]?> required />
+                    <input name="name" type="text" class="input" size="25"  required /><?php $_POST["username"]?>
                 </td>
             </tr>
             <tr>
