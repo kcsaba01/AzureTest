@@ -42,6 +42,8 @@ if(isset($_POST["submit"]))
         }else
         {
             $error = "Incorrect username or password.";
+            header("location:register.php");
+            exit();
         }
 
     }
