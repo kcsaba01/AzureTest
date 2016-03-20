@@ -6,7 +6,6 @@
  * Time: 19:55
  */
 session_start();
-include("check.php");
 include("connection.php"); //Establishing connection with our database
 
 $error = ""; //Variable for storing our errors.
@@ -40,11 +39,6 @@ if(isset($_POST["submit"]))
         if(mysqli_num_rows($result) == 1)
         {
             $_SESSION['username'] = $username; // Initializing Session
-            echo($username);
-            if ($login_user == "admin")
-                {
-                    header("location: adminpage.php");
-                }else
             header("location: home.php"); // Redirecting To Other Page
         }else
         {
