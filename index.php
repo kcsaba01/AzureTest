@@ -21,7 +21,7 @@
     The header comes here
     <img id="bus_logo" src="businesslogo.jpeg" alt="NoName Company Logo"/>
     <div id="Page_title">
-        <H3> NoName Company</H3>
+        <H1> NoName Company</H1>
     </div>
     </header>
     <main>
