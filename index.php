@@ -27,7 +27,7 @@
         <div align="center">
             <br><br>
             <div class="loginBox">
-                <h3>Login Form</h3>
+                <h3>Please login</h3>
                 <br><br>
                 <form method="post" action="">
                     <label>Username:</label><br>
@@ -45,7 +45,7 @@
     <footer>
         <table class="topBorder" style="width:100%">
          <tr>
-            <th><H2 align="left">Contact Helpdesk</H2></th>
+            <th><H2 align="left"> <i>Contact Helpdesk</i></H2></th>
             <th><H2 align="right"> <i> Login/Registration page</i></H2></th>
          </tr>
         </table>
