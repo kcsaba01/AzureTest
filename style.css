@@ -1,3 +1,11 @@
+table.bottomBorder {
+	border-collapse: collapse;
+}
+table.bottomBorder td,
+table.bottomBorder th {
+	border-bottom: 1px solid yellowgreen;
+	padding:5px;
+}
 .loginBox
 {
 	width:300px;
