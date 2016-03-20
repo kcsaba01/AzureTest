@@ -40,7 +40,7 @@ if(isset($_POST["submit"]))
         {
             $_SESSION['username'] = $username; // Initializing Session
             echo($username);
-            if ($username == "admin")
+            if ($login_user == "admin")
                 {
                     header("location: adminpage.php");
                 }else
