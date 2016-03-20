@@ -23,7 +23,7 @@
     <br><br>
     <form method="post" action="">
         <label>Username:</label><br>
-        <input type="text" name="Username" placeholder="username" /><br><br>
+        <input type="text" name="username" placeholder="Username" /><br><br>
         <label>Password:</label><br>
         <input type="password" name="Password" placeholder="password" />  <br><br>
         <input type="submit" name="submit" value="Login" /> 
