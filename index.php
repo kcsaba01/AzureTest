@@ -33,6 +33,9 @@
             <th><H2>Contact Helpdesk</H2></th>
             <th><H1 align="right"> Login/Registration page</H1></th>
          </tr>
+            <tr>
+                <H4>512 University Street<H4>
+            </tr>
         </table>
     </footer>
 </html>
