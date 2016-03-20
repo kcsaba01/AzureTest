@@ -29,7 +29,8 @@ input[type=text],input[type=password]
 }
 .Page_title
 {
-	font-size:60px;
+	font-size:40px;
+	color:#0066FF;
 	font-family::Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 }
 label
