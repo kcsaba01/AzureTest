@@ -35,7 +35,11 @@ else
         <div class="adminBox">
             <h3>Select Task</h3>
             <br><br>
-            <table border=1 style="width:200"</table>
+            <table border=1 style="width:200">
+                <tr>
+                    <td>Test</td>
+                </tr>
+            </table>
 
         </div>
     </div>
