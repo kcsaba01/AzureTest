@@ -42,7 +42,7 @@ include("submit.php");
                 </td>
             </tr>
             <tr>
-                <td style="font-weight: bold">
+                <td height="23" style="font-weight: bold">
                     <div align="right">
                         <label for="email">Email</label>
                     </div>
