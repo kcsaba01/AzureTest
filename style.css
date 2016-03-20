@@ -24,6 +24,12 @@ H1
 	color:black;
 	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 }
+body
+{
+	margin: 0;
+	padding: 0;
+	background-color:lightcyan;
+}
 .loginBox
 {
 	width:300px;
@@ -84,12 +90,7 @@ input[type=submit]
 	font-size:36px;
 	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 }
-body
-{
-	margin: 0;
-	padding: 0;
-	background-color:lightsteelblue;
-}
+
 .top-bar
 {
 	width:100%;
