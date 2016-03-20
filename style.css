@@ -18,6 +18,12 @@ table.topBorder th
 	border-top: 1px solid yellowgreen;
 	padding:5px;
 }
+H1
+{
+	font-size:40px;
+	color:black;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
 .loginBox
 {
 	width:300px;
@@ -47,12 +53,7 @@ input[type=text],input[type=password]
 	font-size:20px;
 	margin-top:10px;
 }
-H1
-{
-	font-size:40px;
-	color:black;
-	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
-}
+
 label
 {
 	font-size:20px;
@@ -87,7 +88,7 @@ body
 {
 	margin: 0;
 	padding: 0;
-	background-color:lightblue;
+	background-color:lightsteelblue;
 }
 .top-bar
 {
