@@ -20,7 +20,7 @@
     <header>
     <section>
         <article>
-        <img id="bus_logo" src="businesslogo.png" alt="NoName Company Logo"/>
+        <img id="bus_logo" height=150 src="businesslogo.png" alt="NoName Company Logo"/>
     </article>
     <article>
     <div class="Page_title">
