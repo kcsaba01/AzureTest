@@ -42,7 +42,7 @@ if(isset($_POST["submit"]))
             header("location: home.php"); // Redirecting To Other Page
         }else
         {
-            $error = "Incorrect username or password. Please register";
+            $error = "Incorrect username or password. Please register or try again";
 
         }
 
