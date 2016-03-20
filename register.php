@@ -64,7 +64,7 @@ include("submit.php");
             <tr>
                 <td height="23"></td>
                 <td>
-                    <div align="right">
+                    <div align="center">
                         <input type="submit" name="submit" value="Register!" />
                     </div>
                 </td>
