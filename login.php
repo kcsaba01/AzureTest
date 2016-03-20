@@ -6,6 +6,7 @@
  * Time: 19:55
  */
 session_start();
+include("check.php");
 include("connection.php"); //Establishing connection with our database
 
 $error = ""; //Variable for storing our errors.
