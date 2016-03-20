@@ -30,6 +30,20 @@ else
        </table>
     </header>
 <main>
+    <div align="center">
+        <br><br>
+        <div class="loginBox">
+            <h3>Select Task</h3>
+            <br><br>
+            <form method="post" action="">
+                <input type="submit" name="Review Bugs" value="Bugs" />
+                <input type="submit" name="Authorise Users" value="Auth" />
+            </form>
+            <div class="error"><?php echo $error;?></div>
+        </div>
+    </div>
+    <br><br>
+
 
     <br><br>
 </main>
