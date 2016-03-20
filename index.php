@@ -18,10 +18,10 @@
 
 <body>
     <header>
-       <table border=1 style="width:100%">
+       <table style="width:100%">
         <tr>
             <td><img id="bus_logo" height=150 src="businesslogo.png" alt="NoName Company Logo"/></td>
-            <td><H1 align="right"><i>NoName Company</i></H1></td>
+            <td><H1 align="right"><i>Welcome to NoName Company</i></H1></td>
         </tr>
        </table>
 
@@ -31,6 +31,8 @@
     </main>
 </body>
     <footer>
-        Footer comes here
+        <table style="width:100%"
+               <th> Contact Helpdesk</th>
+                <th><H1 align="right"> Login/Registration page</H1></th>
     </footer>
 </html>
