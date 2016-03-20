@@ -36,7 +36,7 @@ else
             <h3>Select Task</h3>
             <br><br>
             <table border=1 width=200></table>
-            <div class="error"><?php echo $error;?></div>
+
         </div>
     </div>
     <br><br>
