@@ -27,7 +27,7 @@ input[type=text],input[type=password]
 	font-size:20px;
 	margin-top:10px;
 }
-.Page_title
+H1
 {
 	font-size:40px;
 	color:#0066FF;
@@ -68,7 +68,7 @@ body
 {
 	margin: 0;
 	padding: 0;
-	background-color:#D6F5F5;
+	background-color:lightblue;
 }
 .top-bar
 {
