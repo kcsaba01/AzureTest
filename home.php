@@ -25,6 +25,12 @@
     </table>
 </header>
 <main>
+    <?php
+    if ($login_user =="admin")
+        {header("location: adminpage.php");
+        }
+    else
+    ?>
     <h1 class="hello">Hello, <em><?php echo $login_user;?>!</em></h1>
     <br><br><br>
 </main>
