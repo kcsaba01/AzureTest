@@ -21,7 +21,7 @@
        <table style="width="100%">
         <tr>
             <td><img id="bus_logo" height=150 src="businesslogo.png" alt="NoName Company Logo"/></td>
-            <td><H1 allign="right">NoName Company</H1></td>
+            <td><H1 align="right">NoName Company</H1></td>
         </tr>
        </table>
 
