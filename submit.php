@@ -11,7 +11,7 @@ if(isset($_POST["submit"]))
     $email = mysqli_real_escape_string($db, $email);
     $password = mysqli_real_escape_string($db, $password);
     $password = md5($password);
-    $phone=mysqli_real_escape_string($db, $name);
+    $phone=mysqli_real_escape_string($db, $phone);
 
 
     $sql="SELECT email FROM users WHERE email='$email'";
