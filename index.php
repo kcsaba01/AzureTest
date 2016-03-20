@@ -31,12 +31,12 @@
         <table class="topBorder" style="width:100%">
          <tr>
             <th><H2>Contact Helpdesk</H2></th>
-            <th><H1 align="right"> Login/Registration page</H1></th>
+            <th><H1 align="right"> <i> Login/Registration page</i></H1></th>
          </tr>
         </table>
          <table style="100%">
-            <tr>
-            <td><H4>512 University Street<H4></td>
+         <tr>
+            <td>512 University Street</td>
          </tr>
          <tr>
              <td>Aberdeen AB10 7QG</td>
