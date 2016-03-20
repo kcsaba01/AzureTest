@@ -13,7 +13,7 @@ $result1=mysqli_query($db,$sql_auth);
 if (mysqli_num_rows($result1)!=1)
 {
     header("location:noauth.php");
-}
+}else
 ?>
 
 <!doctype html>
