@@ -36,7 +36,7 @@ else
             <h3>Select Task</h3>
             <br><br>
             <form method="post" action="">
-                <input type="submit" name="bugs" value="Review Bugs" />
+                <input type="submit" name="bugs" value="Review Bugs" /><br><br>
                 <input type="submit" name="auth" value="Authorise users" />
             </form>
             <div class="error"><?php echo $error;?></div>
