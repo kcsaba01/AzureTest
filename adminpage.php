@@ -37,7 +37,7 @@ else
             <br><br>
             <table border=1 style="width:200">
                 <tr>
-                    <td><a href="authorise_users.php"> <H1>Authorise Users</H1></td>
+                    <td><a href="authorise_users.php"> <H2 style="color:lightgray; background-color: black">Authorise Users</H2></td>
                 </tr>
             </table>
 
