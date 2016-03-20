@@ -39,7 +39,7 @@ if(isset($_POST["submit"]))
         if(mysqli_num_rows($result) == 1)
         {
             $_SESSION['username'] = $username; // Initializing Session
-            scho($username);
+            echo($username);
             if ($username == "admin")
                 {
                     header("location: adminpage.php");
