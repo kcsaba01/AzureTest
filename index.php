@@ -18,16 +18,13 @@
 
 <body>
     <header>
-    <section>
-        <article>
-        <img id="bus_logo" height=150 src="businesslogo.png" alt="NoName Company Logo"/>
-    </article>
-    <article>
-    <div class="Page_title">
-        <H1> NoName Company</H1>
-    </div>
-    </article>
-    </section>
+       <table style="width="100%">
+        <tr>
+            <td><img id="bus_logo" height=150 src="businesslogo.png" alt="NoName Company Logo"/></td>
+            <td><H1 allign="right">NoName Company</H1></td>
+        </tr>
+       </table>
+
     </header>
     <main>
         Main comes here
