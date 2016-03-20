@@ -61,6 +61,16 @@ include("submit.php");
                 </td>
             </tr>
             <tr>
+                <td height="23" style="font-weight: bold">
+                    <div align="right">
+                        <label for="phone">Phone</label>
+                    </div>
+                </td>
+                <td>
+                    <input name="phone" type="number" class="input" size="35" required />
+                </td>
+        </tr>
+            <tr>
                 <td height="23"></td>
                 <td>
                     <div align="left">
