@@ -11,14 +11,13 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>PHP Login Form with Session</title>
+<title>Welcome to NoName Company</title>
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
 
 <body>
     <header>
-    The header comes here
     <img id="bus_logo" src="businesslogo.jpeg" alt="NoName Company Logo"/>
     <div id="Page_title">
         <H1> NoName Company</H1>
