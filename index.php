@@ -30,8 +30,8 @@
     <footer>
         <table class="topBorder" style="width:100%">
          <tr>
-            <th><H2>Contact Helpdesk</H2></th>
-            <th><H1 align="right"> <i> Login/Registration page</i></H1></th>
+            <th><H2 align="left">Contact Helpdesk</H2></th>
+            <th><H2 align="right"> <i> Login/Registration page</i></H2></th>
          </tr>
         </table>
          <table style="100%">
