@@ -35,7 +35,7 @@ else
         <div class="adminBox">
             <h3>Select Task</h3>
             <br><br>
-            <table border=1 width=200></table>
+            <table border=1 width="200"</table>
 
         </div>
     </div>
