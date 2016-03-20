@@ -19,6 +19,10 @@
 <body>
     <header>
     The header comes here
+    <img id="bus_logo" src="businesslogo.jpeg" alt="NoName Company Logo"/>
+    <div id="Page_title">
+        <H3> NoName Company</H3>
+    </div>
     </header>
     <main>
         Main comes here
