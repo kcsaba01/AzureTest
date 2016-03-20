@@ -31,6 +31,7 @@ input[type=text],input[type=password]
 {
 	font-size:40px;
 	color:#0066FF;
+	allign:right;
 	font-family::Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 }
 label
