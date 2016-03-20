@@ -5,6 +5,7 @@
  * Date: 20/03/2016
  * Time: 22:00
  */
+include("check.php");
 ?>
 
 <!doctype html>
@@ -18,20 +19,27 @@
     <header>
        <table class="bottomBorder" style="width:100%">
          <tr>
-             <th><img align="left" id="bus_logo" height=150 src="businesslogo.png" alt="NoName Company Logo"/></th>
+             <th><a href="logout.php"> <img align="left" id="bus_logo" height=150 src="businesslogo.png" alt="NoName Company Logo"/></th>
              <th><H1 align="right"><i>Welcome to NoName Company</i></H1></th>
         </tr>
        </table>
     </header>
 <main>
-<br><br>
+    <?php
+    if ($login_user !="admin")
+    echo "You are not authorised to view this page!";
+    {header("location: logout.php");
+    }
+    else echo "Welcome Admin!"
+    ?>
+    <br><br>
 </main>
 </body>
 <footer>
     <table class="topBorder" style="width:100%">
         <tr>
             <td><H2 align="left"> <i>Contact Helpdesk</i></H2> <p align="left">512 University Street<br>Aberdeen AB10 7QG<br> 01224 26<b> 0000</b></p></td>
-            <td><H2 align="right"> <bi> Login/Registration page</bi></H2></td>
+            <td><H2 align="right"> <bi> Admin Page</bi></H2></td>
         </tr>
     </table>
 
