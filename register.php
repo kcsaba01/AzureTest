@@ -28,8 +28,7 @@ include("submit.php");
 </header>
 <main>
 <form method="post" action="">
-    <fieldset>
-        <table width="100%" allign =center border="0" cellpadding="10" cellspacing="10">
+    <table width="100%" allign =center border="0" cellpadding="10" cellspacing="10">
             <tr>
                 <td colspan="2" align="center" class="error"><?php echo $msg;?></td>
             </tr>
@@ -70,8 +69,8 @@ include("submit.php");
                 </td>
             </tr>
         </table>
-    </fieldset>
 </form>
+    <br><br><br>
 </main>
 </body>
 <footer>
