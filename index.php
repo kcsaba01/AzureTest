@@ -33,9 +33,15 @@
             <th><H2>Contact Helpdesk</H2></th>
             <th><H1 align="right"> Login/Registration page</H1></th>
          </tr>
-            <tr>
-                <H4>512 University Street<H4>
-            </tr>
+         <tr>
+            <td><H4>512 University Street<H4></td>
+         </tr>
+         <tr>
+             <td>Aberdeen AB10 7QG</td>
+         </tr>
+         <tr>
+             <td> 01224 20 <b>0000</b></td>
+         </tr>
         </table>
     </footer>
 </html>
