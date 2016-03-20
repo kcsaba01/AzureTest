@@ -18,7 +18,7 @@
 
 <body>
     <header>
-       <table border=1 style="width=100%">
+       <table border=1 style="width:100%">
         <tr>
             <td><img id="bus_logo" height=150 src="businesslogo.png" alt="NoName Company Logo"/></td>
             <td><H1 align="right">NoName Company</H1></td>
