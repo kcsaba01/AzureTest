@@ -8,10 +8,9 @@
 include("check.php");
 if ($login_user !="admin")
 {
-    echo "You are not authorised to view this page!";
-    header("location: logout.php");
+    header("location: noauth.php");
 }
-else echo "Welcome Admin!"
+else
 ?>
 
 <!doctype html>
