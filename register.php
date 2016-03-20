@@ -70,7 +70,7 @@ include("submit.php");
             </tr>
         </table>
 </form>
-    <br><br><br>
+    <br><br><br><br><br><br>
 </main>
 </body>
 <footer>
