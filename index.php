@@ -18,7 +18,8 @@
 
 <body>
     <header>
-    <article>
+    <section>
+        <article>
         <img id="bus_logo" src="businesslogo.png" alt="NoName Company Logo"/>
     </article>
     <article>
@@ -26,6 +27,7 @@
         <H1> NoName Company</H1>
     </div>
     </article>
+    </section>
     </header>
     <main>
         Main comes here
