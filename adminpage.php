@@ -35,10 +35,7 @@ else
         <div class="adminBox">
             <h3>Select Task</h3>
             <br><br>
-            <form method="post" action="">
-                <a href="authorise_users.php"><input type="submit" name="bugs" value="Review Bugs" /><br><br>
-                <input type="submit" name="auth" value="Authorise users" />
-            </form>
+            <table border=1 width=200></table>
             <div class="error"><?php echo $error;?></div>
         </div>
     </div>
