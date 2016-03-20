@@ -27,7 +27,7 @@ if(isset($_POST["submit"]))
         $query = mysqli_query($db, "INSERT INTO users (username, email, password, phone) VALUES ('$name', '$email', '$password', '$phone')")or die(mysqli_error($db));
         if($query)
         {
-            $msg = "Thank You! you are now registered.";
+            $msg = "Thank You! you are now registered.<br> An administrator will need to aprove your account before accessing data";
         }
 
     }
