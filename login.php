@@ -45,6 +45,5 @@ if(isset($_POST["submit"]))
         }
 
     }
-}else {location:register.php}
-
+}
 ?>
