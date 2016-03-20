@@ -6,6 +6,12 @@
  * Time: 22:00
  */
 include("check.php");
+if ($login_user !="admin")
+{
+    echo "You are not authorised to view this page!";
+    header("location: logout.php");
+}
+else echo "Welcome Admin!"
 ?>
 
 <!doctype html>
@@ -25,14 +31,7 @@ include("check.php");
        </table>
     </header>
 <main>
-    <?php
-    if ($login_user !="admin")
-        {
-            echo "You are not authorised to view this page!";
-            header("location: logout.php");
-        }
-    else echo "Welcome Admin!"
-    ?>
+
     <br><br>
 </main>
 </body>
