@@ -6,9 +6,10 @@
  * Time: 22:04
  */
 include("check.php");
-include('connection.php');
+include("connection.php");
 $sql1="SELECT userid FROM users WHERE username='$login_user'";
 $result1=mysqli_query($db,$sql1);
+$rows=mysqli_fetch_array($result,MYSQLI_ASSOC) ;
 if (mysqli_num_rows($result1)==1)
 {
     echo $result1;
