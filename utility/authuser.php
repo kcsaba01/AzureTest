@@ -4,7 +4,7 @@
  * User: Csaba Keresztessy <0811994@rgu.ac.uk>
  * Date: 20/03/2016
  * Time: 22:05
- * Checks if a user is already registered
+ * Authorises a user
  */
 include('connection.php');
 $msg = "";
