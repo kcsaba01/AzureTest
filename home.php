@@ -12,6 +12,7 @@ $username=$login_user;
 $sql="SELECT uid FROM users WHERE username='$username'";
 $result=mysqli_query($db,$sql);
 $row=mysqli_fetch_array($result,MYSQLI_ASSOC) ;
+$bob=mysqli_num_rows($result);
 if (mysqli_num_rows($result)==1)
 {
     echo $result;
@@ -42,7 +43,7 @@ if (mysqli_num_rows($result)==1)
         }
     else
     ?>
-    <h1 class="hello">Hello, <em><?php echo $result;?>!</em></h1>
+    <h1 class="hello">Hello, <em><?php echo $bob;?>!</em></h1>
     <br><br><br>
 </main>
 </body>
