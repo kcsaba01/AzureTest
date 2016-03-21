@@ -6,7 +6,7 @@
  * Time: 19:55
  */
 session_start();
-include("../utility/connection.php"); //Establishing connection with our database
+include("utility/connection.php"); //Establishing connection with our database
 
 $error = ""; //Variable for storing our errors.
 if(isset($_POST["register"])) {header("location:register.php");}

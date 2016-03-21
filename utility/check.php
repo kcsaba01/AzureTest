@@ -5,7 +5,7 @@
  * Date: 20/03/2016
  * Time: 22:05
  */
-include('connection.php');
+include('utility/connection.php');
 session_start();
 $user_check=$_SESSION['username'];
 
