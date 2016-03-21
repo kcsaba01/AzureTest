@@ -10,7 +10,7 @@ include('connection.php');
 $msg = "";
 if(isset($_POST["submit"]))
 {
-    if(empty($_POST["username"])
+    if(empty($_POST["username"]))
     {
         $msg = "Please input a username.";
     } else
