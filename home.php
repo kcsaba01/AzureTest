@@ -8,7 +8,7 @@
 	include("check.php");
 include('connection.php');
 session_start();
-$sql_auth="SELECT uid FROM users WHERE username='$login_user' and aproved=1'";
+$sql_auth="SELECT uid FROM users WHERE username='$login_user' and aproved=1";
 $result1=mysqli_query($db,$sql_auth);
 if (mysqli_num_rows($result1)==0)
 {
