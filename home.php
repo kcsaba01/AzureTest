@@ -10,7 +10,7 @@ include('connection.php');
 session_start();
 $sql_auth="SELECT uid FROM users WHERE username='$login_user'";
 $result1=mysqli_query($db,$sql_auth);
-echo $result1;
+$row=mysqli_fetch_array($result1,MYSQLI_ASSOC) ;
 if (mysqli_num_rows($result1)==0)
 {
     echo $result1;
