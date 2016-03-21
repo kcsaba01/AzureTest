@@ -7,11 +7,9 @@
  */
 include("check.php");
 include('connection.php');
-session_start();
 $username=$login_user;
 $sql="SELECT uid FROM users WHERE username='$username'";
 $result=mysqli_query($db,$sql);
-$row=mysqli_fetch_array($result,MYSQLI_ASSOC) ;
 $bob=mysqli_num_rows($result);
 if (mysqli_num_rows($result)==1)
 {
