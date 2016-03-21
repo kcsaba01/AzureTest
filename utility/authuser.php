@@ -6,7 +6,7 @@
  * Time: 22:05
  * Checks if a user is already registered
  */
-include('utility/connection.php');
+include('connection.php');
 $msg = "";
 if(isset($_POST["username"]))
     {
