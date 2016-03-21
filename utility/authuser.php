@@ -23,12 +23,12 @@ if(isset($_POST["submit"]))
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
         if (mysqli_num_rows($result) != 1) //checking whether the user exist
         {
-            $msg = "Sorry...There is no $username with this username...";
+            $msg = "Sorry...There is no"  . $username;
         } else {
             //adding the approved flag
             $query = mysqli_query($db, "UPDATE users SET approved=1 WHERE username='$username'") or die(mysqli_error($db));
             if ($query) {
-                $msg = "Username $username was successfully approved!";
+                $msg = $username . " was successfully approved!";
             }
 
         }
