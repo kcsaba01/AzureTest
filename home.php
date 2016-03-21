@@ -8,12 +8,14 @@
 include("check.php");
 include('connection.php');
 session_start();
-$sql_auth="SELECT uid FROM users WHERE username='$login_user'";
+$username=$login_user;
+$sql_auth="SELECT uid FROM users WHERE username='$username'";
 $result1=mysqli_query($db,$sql_auth);
 $row=mysqli_fetch_array($result1,MYSQLI_ASSOC) ;
 if (mysqli_num_rows($result1)==1)
 {
     echo $result1;
+    exit();
 }else
 ?>
 
