@@ -7,14 +7,11 @@
  */
 include("check.php");
 include('connection.php');
-$username=$login_user;
-$sql="SELECT userid FROM users WHERE username='alfa'";
-$result=mysqli_query($db,$sql);
-$bob=mysqli_num_rows($result);
-if (mysqli_num_rows($result)==1)
+$sql1="SELECT userid FROM users WHERE username='$login_user'";
+$result1=mysqli_query($db,$sql1);
+if (mysqli_num_rows($result1)==1)
 {
-    echo $result;
-    exit();
+    echo $result1;
 }else
 ?>
 
@@ -41,7 +38,7 @@ if (mysqli_num_rows($result)==1)
         }
     else
     ?>
-    <h1 class="hello">Hello, <em><?php echo $bob;?>!</em></h1>
+    <h1 class="hello">Hello, <em><?php echo $result1;?>!</em></h1>
     <br><br><br>
 </main>
 </body>
