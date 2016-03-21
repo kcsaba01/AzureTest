@@ -42,6 +42,7 @@ include ("utility/authuser.php")
                 <input type="text" name="username" placeholder="username" /><br><br><br><br>
                 <input type="submit" name="submit" value="Authorise" />
             </form>
+            <div class="error"><?php echo $msg;?></div>
         </div>
     </div>
     <br><br>
