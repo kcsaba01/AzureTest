@@ -5,10 +5,10 @@
  * Date: 20/03/2016
  * Time: 22:00
  */
-include("../utility/check.php");
+include("utility/check.php");
 if ($login_user !="admin")
 {
-    header("location: ../noauth.php");
+    header("location: /noauth.php");
 }
 else
 ?>

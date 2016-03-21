@@ -5,8 +5,8 @@
  * Date: 20/03/2016
  * Time: 20:25
  */
-include("connection.php");
-include("submit.php");
+include("utility/connection.php");
+include("utility/submit.php");
 
 ?>
 <!doctype html>

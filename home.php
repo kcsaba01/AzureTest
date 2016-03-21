@@ -5,7 +5,7 @@
  * Date: 20/03/2016
  * Time: 22:04
  */
-include("check.php");
+include("/utility/check.php");
 
 ?>
 
