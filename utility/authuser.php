@@ -28,7 +28,7 @@ if(isset($_POST["submit"]))
             //adding the approved flag
             $query = mysqli_query($db, "UPDATE users SET approved=1 WHERE username='$username'") or die(mysqli_error($db));
             if ($query) {
-                $msg = "User was successfully approved!";
+                $msg = "User was successfully approved!" . $username;
             }
 
         }
