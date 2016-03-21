@@ -14,13 +14,13 @@ include("check.php");
 <head>
     <meta charset="utf-8">
     <title>Welcome to NoName Company</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="utility/style.css" type="text/css" />
 </head>
 <body>
 <header>
     <table class="bottomBorder" style="width:100%">
         <tr>
-            <th><a href="logout.php"> <img align="left" id="bus_logo" height=150 src="businesslogo.png" alt="NoName Company Logo" /></th>
+            <th><a href="utility/logout.php"> <img align="left" id="bus_logo" height=150 src="businesslogo.png" alt="NoName Company Logo" /></th>
             <th><H1 align="right"><i>Welcome to NoName Company</i></H1></th>
         </tr>
     </table>
@@ -40,7 +40,7 @@ include("check.php");
     <table class="topBorder" style="width:100%">
         <tr>
             <td><H2 align="left"> <i>Contact Helpdesk</i></H2> <p align="left">512 University Street<br>Aberdeen AB10 7QG<br> 01224 26<b> 0000</b></p></td>
-            <td> <a href="logout.php" style="font-size:18px"> <H2 align="right"> <i>Logout?</i></H2></a></td>
+            <td> <a href="utility/logout.php" style="font-size:18px"> <H2 align="right"> <i>Logout?</i></H2></a></td>
         </tr>
     </table>
 

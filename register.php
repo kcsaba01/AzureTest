@@ -14,14 +14,14 @@ include("submit.php");
 <head>
     <meta charset="utf-8">
     <title>Registration Form</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="utility/style.css">
 </head>
 
 <body>
 <header>
     <table class="bottomBorder" style="width:100%">
         <tr>
-            <th><a href="logout.php"> <img align="left" id="bus_logo" height=150 src="businesslogo.png" alt="NoName Company Logo"/></th>
+            <th><a href="utility/logout.php"> <img align="left" id="bus_logo" height=150 src="businesslogo.png" alt="NoName Company Logo"/></th>
             <th><H1 align="right"><i>Welcome to NoName Company</i></H1></th>
         </tr>
     </table>

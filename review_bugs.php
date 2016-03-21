@@ -18,13 +18,13 @@ else
 <head>
     <meta charset="utf-8">
     <title>Welcome to NoName Company</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="utility/style.css" type="text/css" />
 </head>
 <body>
 <header>
     <table class="bottomBorder" style="width:100%">
         <tr>
-            <th><a href="logout.php"> <img align="left" id="bus_logo" height=150 src="businesslogo.png" alt="NoName Company Logo"/></th>
+            <th><a href="utility/logout.php"> <img align="left" id="bus_logo" height=150 src="businesslogo.png" alt="NoName Company Logo"/></th>
             <th><H1 align="right"><i>Welcome to NoName Company</i></H1></th>
         </tr>
     </table>
