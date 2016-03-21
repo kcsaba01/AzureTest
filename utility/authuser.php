@@ -11,7 +11,7 @@ $msg = "";
 if(isset($_POST["submit"]))
 {
     $name = $_POST["username"];
-    echo $name;
+    echo $name + "test";
     $name = mysqli_real_escape_string($db, $name);
     $sql="SELECT username FROM users WHERE username='$name'";
     $result=mysqli_query($db,$sql);
