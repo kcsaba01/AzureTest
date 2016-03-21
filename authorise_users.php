@@ -7,12 +7,12 @@
  * Page where admin can authorise users
  */
 #include("utility/check.php"); //if the user is not admin, a not authorised page is displayed
-#include ("utility/authuser.php")
-if ($login_user !="admin")
-{
-    header("location: noauth.php");
-}
-else
+include ("utility/authuser.php")
+//if ($login_user !="admin")
+//{
+ //   header("location: noauth.php");
+//}
+//else
 ?>
 
 <!doctype html>
