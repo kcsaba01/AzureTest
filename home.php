@@ -8,7 +8,7 @@
 include("check.php");
 include('connection.php');
 $username=$login_user;
-$sql="SELECT uid FROM users WHERE username='alfa'";
+$sql="SELECT userid FROM users WHERE username='alfa'";
 $result=mysqli_query($db,$sql);
 $bob=mysqli_num_rows($result);
 if (mysqli_num_rows($result)==1)
