@@ -39,7 +39,7 @@ if (mysqli_num_rows($result1)==1)
         }
     else
     ?>
-    <h1 class="hello">Hello, <em><?php echo $result1;?>!</em></h1>
+    <h1 class="hello">Hello, <em><?php echo $result1;?></em></h1>
     <br><br><br>
 </main>
 </body>
