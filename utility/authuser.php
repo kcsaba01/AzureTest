@@ -32,6 +32,4 @@ if(isset($_POST["username"]))
         }
 
     }
-echo $msg;
-}
 ?>
