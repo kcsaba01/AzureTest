@@ -29,7 +29,7 @@ if(isset($_POST["submit"]))
         $password = md5($password);
 
         //Check username and password from database
-        $sql="SELECT userID FROM users WHERE username='$username' and password='$password' and aproved=1";
+        $sql="SELECT userID FROM users WHERE username='$username' and password='$password' and approved=1";
         $result=mysqli_query($db,$sql);
         $row=mysqli_fetch_array($result,MYSQLI_ASSOC) ;
 
@@ -42,7 +42,7 @@ if(isset($_POST["submit"]))
             header("location: home.php"); // Redirecting To Other Page
         }else
         {
-            $error = "Incorrect username or password. Please register or try again";
+            $error = "Incorrect username or password or the account waits for approval";
 
         }
 
