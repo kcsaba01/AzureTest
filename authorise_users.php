@@ -7,6 +7,7 @@
  * Page where admin can authorise users
  */
 include("utility/check.php"); //if the user is not admin, a not authorised page is displayed
+include ("utility/authuser.php")
 if ($login_user !="admin")
 {
     header("location: noauth.php");
@@ -36,7 +37,7 @@ else
         <div class="adminBox">
             <h3>Authorise user</h3>
             <br><br>
-            <form method="post" action="utility/authuser.php">
+            <form method="post" action="">
                 <label>Username:</label><br>
                 <input type="text" name="username" placeholder="username" /><br><br><br><br>
                 <input type="submit" name="submit" value="Authorise" />
