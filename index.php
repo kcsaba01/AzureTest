@@ -1,7 +1,13 @@
 <?php
-	include('utility/login.php'); // Include Login Script
-
-	if ((isset($_SESSION['username']) != '')) 
+/**
+ * Created by PhpStorm.
+ * User: Csaba Keresztessy <0811994@rgu.ac.uk>
+ * Date: 20/03/2016
+ * Time: 22:04
+ * Main page for standard users
+ */
+include('utility/login.php'); // Include Login Script
+if ((isset($_SESSION['username']) != ''))
 	{
 		header('Location: home.php');
 	}	

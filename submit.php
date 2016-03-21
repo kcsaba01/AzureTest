@@ -1,4 +1,11 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Csaba Keresztessy <0811994@rgu.ac.uk>
+ * Date: 20/03/2016
+ * Time: 22:04
+ * adding users to the database
+ */
 $msg = "";
 if(isset($_POST["submit"]))
 {
@@ -27,7 +34,7 @@ if(isset($_POST["submit"]))
         $query = mysqli_query($db, "INSERT INTO users (username, email, password, phone) VALUES ('$name', '$email', '$password', '$phone')")or die(mysqli_error($db));
         if($query)
         {
-            $msg = "Thank You! you are now registered.<br> An administrator will need to aprove your account before accessing data!";
+            $msg = "Thank You! you are now registered.<br> An administrator will need to approve your account before accessing data!";
         }
 
     }

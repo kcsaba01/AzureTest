@@ -4,8 +4,9 @@
  * User: Csaba Keresztessy <0811994@rgu.ac.uk>
  * Date: 20/03/2016
  * Time: 22:00
+ * Page where admin can authorise users
  */
-include("utility/check.php");
+include("utility/check.php"); //if the user is not admin, a not authorised page is displayed
 if ($login_user !="admin")
 {
     header("location: noauth.php");

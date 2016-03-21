@@ -4,8 +4,9 @@
  * User: Csaba Keresztessy <0811994@rgu.ac.uk>
  * Date: 20/03/2016
  * Time: 22:00
+ * Restricted to admin. Page where an admin can approve a fix
  */
-include("utility/check.php");
+include("utility/check.php"); //prevents users accessing the page by amending the URL
 if ($login_user !="admin")
 {
     header("location: noauth.php");

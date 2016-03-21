@@ -4,6 +4,7 @@
  * User: Csaba Keresztessy <0811994@rgu.ac.uk>
  * Date: 20/03/2016
  * Time: 19:56
+ * PHP files that makes the connection to the database
  */
 define('DB_SERVER', 'ap-cdbr-azure-east-c.cloudapp.net');
 define('DB_USERNAME', 'be04376e276d11');

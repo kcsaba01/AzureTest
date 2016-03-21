@@ -4,6 +4,7 @@
  * User: Csaba Keresztessy <0811994@rgu.ac.uk>
  * Date: 20/03/2016
  * Time: 22:05
+ * Checks if a user is already registered
  */
 include('utility/connection.php');
 session_start();
@@ -17,6 +18,6 @@ $login_user=$row['username'];
 
 if(!isset($user_check))
 {
-    header("Location: register.php");
+    header("Location: register.php"); //if there is no user in the database with username then loads the registration form
 }
 ?>

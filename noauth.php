@@ -4,6 +4,7 @@
  * User: Csaba Keresztessy <0811994@rgu.ac.uk>
  * Date: 20/03/2016
  * Time: 23:01
+ * Page to display Noth Authorised when a user tries to access an admin page by replacing te URL
  */
 ?>
 <!doctype html>
