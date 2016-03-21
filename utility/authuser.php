@@ -11,11 +11,12 @@ $msg = "";
 if(isset($_POST["submit"]))
 {
     $name = $_POST["username"];
+    echo $name;
     $name = mysqli_real_escape_string($db, $name);
     $sql="SELECT username FROM users WHERE username='$name'";
     $result=mysqli_query($db,$sql);
     $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
-    if(mysqli_num_rows($result) == 0) //checking whether the user exist
+    if(mysqli_num_rows($result) != 1) //checking whether the user exist
     {
         $msg = "Sorry...There is no user with this username...";
     }
