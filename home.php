@@ -6,14 +6,7 @@
  * Time: 22:04
  */
 include("check.php");
-include("connection.php");
-$sql1="SELECT userid FROM users WHERE username='$login_user'";
-$result1=mysqli_query($db,$sql1);
-$rows=mysqli_fetch_array($result1,MYSQLI_ASSOC) ;
-if (mysqli_num_rows($result1)==1)
-{
-    echo $result1;
-}else
+
 ?>
 
 <!doctype html>
@@ -39,7 +32,7 @@ if (mysqli_num_rows($result1)==1)
         }
     else
     ?>
-    <h1 class="hello">Hello, <em><?php echo $result1?></em></h1>
+    <h1 class="hello">Hello, </h1>
     <br><br><br>
 </main>
 </body>
