@@ -8,28 +8,28 @@
  */
 include('connection.php');
 $msg = "";
-if(isset($_POST["username"]))
+if(isset($_POST["submit"]))
+{
+    if(empty($_POST["username"])
     {
         $msg = "Please input a username.";
-    }else
-    $username = $_POST['username'];
+    } else
+        $username = $_POST['username'];
     echo $username;
     $username = mysqli_real_escape_string($db, $username);
-    $sql="SELECT username FROM users WHERE username='$username'";
-    $result=mysqli_query($db,$sql);
-    $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
-    if(mysqli_num_rows($result) != 1) //checking whether the user exist
+    $sql = "SELECT username FROM users WHERE username='$username'";
+    $result = mysqli_query($db, $sql);
+    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+    if (mysqli_num_rows($result) != 1) //checking whether the user exist
     {
         $msg = "Sorry...There is no user with this username...";
-    }
-    else
-    {
+    } else {
         //adding the approved flag
-        $query = mysqli_query($db, "UPDATE users SET approved=1 WHERE username='$username'")or die(mysqli_error($db));
-        if($query)
-        {
+        $query = mysqli_query($db, "UPDATE users SET approved=1 WHERE username='$username'") or die(mysqli_error($db));
+        if ($query) {
             $msg = "Username $name was successfully approved!";
         }
 
     }
+}
 ?>
