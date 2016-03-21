@@ -31,7 +31,19 @@ else
     </table>
 </header>
 <main>
-<H1> User authorisation page</H1>
+    <div align="center">
+        <br><br>
+        <div class="loginBox">
+            <h3>Please login</h3>
+            <br><br>
+            <form method="post" action="utility/authuser.php">
+                <label>Username:</label><br>
+                <input type="text" name="username" placeholder="username" /><br><br><br>
+                <input type="submit" name="submit" value="Login" />
+            </form>
+            <div class="error"><?php echo $error;?></div>
+        </div>
+    </div>
     <br><br>
 </main>
 </body>
