@@ -9,12 +9,12 @@ include("check.php");
 include('connection.php');
 session_start();
 $username=$login_user;
-$sql_auth="SELECT uid FROM users WHERE username='$username'";
-$result1=mysqli_query($db,$sql_auth);
-$row=mysqli_fetch_array($result1,MYSQLI_ASSOC) ;
-if (mysqli_num_rows($result1)==1)
+$sql="SELECT uid FROM users WHERE username='$username'";
+$result=mysqli_query($db,$sql);
+$row=mysqli_fetch_array($result,MYSQLI_ASSOC) ;
+if (mysqli_num_rows($result)==1)
 {
-    echo $result1;
+    echo $result;
     exit();
 }else
 ?>
@@ -42,7 +42,7 @@ if (mysqli_num_rows($result1)==1)
         }
     else
     ?>
-    <h1 class="hello">Hello, <em><?php echo $username;?>!</em></h1>
+    <h1 class="hello">Hello, <em><?php echo $result;?>!</em></h1>
     <br><br><br>
 </main>
 </body>
