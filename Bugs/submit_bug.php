@@ -11,16 +11,14 @@ if(isset($_POST["submit"]))
 {
     $title = $_POST["title"];
     $descr = $_POST["desc"];
-    //$postdate = $_POST["postdate"];
-    //$fixdate = $_POST["fixdate"];
-    //$fixed = $_POST["fixed"];
-    //$dateObj = DateTime::createFromFormat('d/m/Y', $postdate);
-    //$newpostdate = $dateObj->format('Y-m-d');
+    $postdate = $_POST["postdate"];
+    $fixdate = $_POST["fixdate"];
+    $fixed = $_POST["fixed"];
+    $dateObj1 = DateTime::createFromFormat('d/m/Y', $postdate);
+    $newpostdate = $dateObj1->format('Y-m-d');
         //$userid = $login_user; //this can be the logged in user
-    //$title = mysqli_real_escape_string($db, $title);
-    //$descr = mysqli_real_escape_string($db, $descr);
-    //$postdate = mysqli_real_escape_string($db, $postdate);
-    //$fixdate = mysqli_real_escape_string($db, $fixdate);
+    $title = mysqli_real_escape_string($db, $title);
+    $descr = mysqli_real_escape_string($db, $descr);
     $sql="SELECT title FROM bugs WHERE title='$title'";
     $result=mysqli_query($db,$sql);
     $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
@@ -30,7 +28,7 @@ if(isset($_POST["submit"]))
     }
     else
     {
-        $query = mysqli_query($db, "INSERT INTO bugs (title, postDate, userID) VALUES ('test126', '2015-03-03', 131)") or die(mysqli_error($db));
+        $query = mysqli_query($db, "INSERT INTO bugs (title, postDate, userID) VALUES ('$title', '2015-03-03', 131)") or die(mysqli_error($db));
         if($query)
         {
             $msg = "Thank You! The bug has been logged.";
