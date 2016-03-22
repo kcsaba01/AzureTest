@@ -4,9 +4,11 @@
  * User: Csaba Keresztessy <0811994@rgu.ac.uk>
  * Date: 20/03/2016
  * Time: 22:00
- *
+ * Adding a new bug
  */
+include("/bugs/submit_bug.php");
 ?>
+
 <!doctype html>
 <html>
 <head>
