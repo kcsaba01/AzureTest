@@ -32,7 +32,7 @@ body
 }
 .loginBox
 {
-	width:300px;
+	width:420px;
 	height:500px;
 	border:3px solid black;
 	border-radius:10px;	
@@ -53,7 +53,7 @@ body
 }
 .adminBox
 {
-	width:300px;
+	width:420px;
 	height:200px;
 	border:3px solid black;
 	border-radius:10px;
@@ -86,7 +86,7 @@ body
 }
 .userBox
 {
-	width:300px;
+	width:420px;
 	height:300px;
 	border:3px solid black;
 	border-radius:10px;
