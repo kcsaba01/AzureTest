@@ -38,13 +38,13 @@ include("/utility/check.php");
             <table style="width:300">
 
                 <tr>
-                    <td><a href="Bugs/retrieve_bug.php"> <H3 align=center style="color:lightgray; background-color: black; font-size: 25px ">Retrieve Bug</H3></td>
+                    <td><a href="Bugs/retrieve_bug.php"> <H3 align=center style="color:lightgray; background-color: black; font-size: 25px">Retrieve Bug</H3></td>
                 </tr>
                 <tr>
                     <td><a href="Bugs/new_bug.php"> <H3 align=center style="color:lightgray; background-color: black; font-size: 25px">Log New Bug</H3></td>
                 </tr>
                 <tr>
-                    <td><a href="Bugs/fixed_bug.php"> <H2 align=center style="color:lightgray; background-color: black; font-size: 25px ">Mark Bug Fixed</H2></td>
+                    <td><a href="Bugs/fixed_bug.php"> <H2 align=center style="color:lightgray; background-color: black; font-size: 25px">Mark Bug Fixed</H2></td>
                 </tr>
                 <tr>
                     <td><a href="Bugs/comment_bug.php"> <H2 align=center style="color:lightgray; background-color: black; font-size: 25px">Comment Bug</H2></td>
