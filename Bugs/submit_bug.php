@@ -4,7 +4,7 @@
  * User: Csaba Keresztessy <0811994@rgu.ac.uk>
  * Date: 20/03/2016
  * Time: 22:04
- * adding a bug to the database
+ * submitting a bug to the database
  */
 $msg = "";
 if(isset($_POST["submit"]))
@@ -36,5 +36,5 @@ if(isset($_POST["submit"]))
         }
 
     }
-}
+} echo "none";
 ?>
