@@ -6,7 +6,7 @@
  * Time: 22:00
  * Adding a new bug
  */
-include("/utility/connection.php");
+include("../utility/connection.php");
 include("submit_bug.php");
 ?>
 
