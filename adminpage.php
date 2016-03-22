@@ -41,7 +41,7 @@ else
                     <td><a href="authorise_users.php"> <H4>Authorise Users</H4></td>
                 </tr>
                 <tr>
-                    <td><a href="authorise_bug_fix.php.php"> <H4>Authorise Bug Fix</H4></td>
+                    <td><a href="authorise_bug_fix.php"> <H4>Authorise Bug Fix</H4></td>
                 </tr>
             </table>
 
