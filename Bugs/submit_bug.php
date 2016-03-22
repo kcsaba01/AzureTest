@@ -27,7 +27,7 @@ if(isset($_POST["submit"]))
     }
     else
     {
-        $query = mysqli_query($db, "INSERT INTO bugs (title, postDate, userID) VALUES ('$title', '2015-03-03' , 131)") or die(mysqli_error($db));
+        $query = mysqli_query($db, "INSERT INTO bugs (title, postDate, userID) VALUES ('$title', '$newpostdate' , 131)") or die(mysqli_error($db));
         if($query)
         {
             $msg = "Thank You! The bug has been logged.";
