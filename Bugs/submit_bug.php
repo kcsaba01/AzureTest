@@ -6,7 +6,7 @@
  * Time: 22:04
  * submitting a bug to the database
  */
-$msg ="";
+$msg =$fixed;
 if(isset($_POST["submit"]))
 {
     $title = $_POST["title"];
@@ -15,7 +15,7 @@ if(isset($_POST["submit"]))
     $fixdate = $_POST["fixdate"];
     $fixed = $_POST["fixed"];
     $postdate = date("Y-m-d", strtotime($postdate));
-        //$userid = $login_user; //this can be the logged in user
+    $fixdate = date("Y-m-d", strtotime($fixdate));
     $title = mysqli_real_escape_string($db, $title);
     $descr = mysqli_real_escape_string($db, $descr);
     $sql="SELECT title FROM bugs WHERE title='$title'";
@@ -27,7 +27,7 @@ if(isset($_POST["submit"]))
     }
     else
     {
-        $query = mysqli_query($db, "INSERT INTO bugs (title, postDate, userID) VALUES ('$title', '$postdate' , 131)") or die(mysqli_error($db));
+        $query = mysqli_query($db, "INSERT INTO bugs (title, desc, postDate, fixdate, userID) VALUES ('$title', '$descr', '$postdate', '$fixdate' , 131)") or die(mysqli_error($db));
         if($query)
         {
             $msg = "Thank You! The bug has been logged.";
