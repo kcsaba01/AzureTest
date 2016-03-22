@@ -32,24 +32,24 @@ include("/utility/check.php");
 <main>
     <div align="center">
         <br><br>
-        <div class="adminBox">
+        <div class="userBox">
             <h3>Select Task</h3>
             <br><br>
             <table style="width:300">
                 <tr>
-                    <td><a href="Bugs/retrieve_bug.php"> <H3 align=center style="color:lightgray; border-radius: 0px 0px 0 0; background-color: black; font-size: 25px">Retrieve Bug</H3></td>
+                    <td><a href="Bugs/retrieve_bug.php"> <H4>Retrieve Bug</H4></td>
                 </tr>
                 <tr>
-                    <td><a href="Bugs/new_bug.php"> <H3 align=center style="color:lightgray; border-radius: 0px 0px 0 0; background-color: black; font-size: 25px">Log New Bug</H3></td>
+                    <td><a href="Bugs/new_bug.php"> <H4">Log New Bug</H4></td>
                 </tr>
                 <tr>
-                    <td><a href="Bugs/fixed_bug.php"> <H3 align=center style="color:lightgray; background-color: black; font-size: 25px">Mark Bug Fixed</H3></td>
+                    <td><a href="Bugs/fixed_bug.php"> <H4 align=center style="color:lightgray; background-color: black; font-size: 25px">Mark Bug Fixed</H4></td>
                 </tr>
                 <tr>
-                    <td><a href="Bugs/comment_bug.php"> <H3 align=center style="color:lightgray; background-color: black; font-size: 25px">Comment Bug</H3></td>
+                    <td><a href="Bugs/comment_bug.php"> <H4 align=center style="color:lightgray; background-color: black; font-size: 25px">Comment Bug</H4></td>
                 </tr>
                 <tr>
-                    <td><a href="Bugs/add_att_bug.php"> <H3 align=center style="color:lightgray; background-color: black; font-size: 25px ">Add Attachment</H2></td>
+                    <td><a href="Bugs/add_att_bug.php"> <H4 align=center style="color:lightgray; background-color: black; font-size: 25px ">Add Attachment</H2></td>
                 </tr>
             </table>
         </div>
