@@ -14,8 +14,8 @@ if(isset($_POST["submit"]))
     $postdate = $_POST["postdate"];
     $fixdate = $_POST["fixdate"];
     $fixed = $_POST["fixed"];
-    $dateObj1 = DateTime::createFromFormat('d/m/Y', $postdate);
-    $newpostdate = $dateObj1->format('Y-m-d');
+    //$dateObj1 = DateTime::createFromFormat('d/m/Y', $postdate);
+    //$newpostdate = $dateObj1->format('Y-m-d');
         //$userid = $login_user; //this can be the logged in user
     $title = mysqli_real_escape_string($db, $title);
     $descr = mysqli_real_escape_string($db, $descr);
