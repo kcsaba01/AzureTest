@@ -6,8 +6,6 @@
  * Time: 22:04
  * adding a bug to the database
  */
-include("/utility/connection.php");
-include("/utility/check.php");
 $msg = "";
 if(isset($_POST["submit"]))
 {

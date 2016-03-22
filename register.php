@@ -8,7 +8,6 @@
  */
 include("utility/connection.php");
 include("utility/submit.php");
-
 ?>
 <!doctype html>
 <html>
