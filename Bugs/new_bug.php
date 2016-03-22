@@ -24,6 +24,70 @@
     </table>
 </header>
 <main>
+    <form method="post" action="">
+        <table width="100%" allign =center border="0" cellpadding="10" cellspacing="10">
+            <tr>
+                <td colspan="2" align="center" class="error"><?php echo $msg;?></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold">
+                    <div align="right"><label for="name">Bug title</label></div>
+                </td>
+                <td>
+                    <input name="title" type="text" class="input" size="35"  required />
+                </td>
+            </tr>
+            <tr>
+                <td height="23" style="font-weight: bold">
+                    <div align="right">
+                        <label for="desc">Description</label>
+                    </div>
+                </td>
+                <td>
+                    <input name="desc" type="text" class="input" size="60" required />
+                </td>
+            </tr>
+            <tr>
+                <td height="23" style="font-weight: bold">
+                    <div align="right">
+                        <label for="postdate">Post Date</label>
+                    </div>
+                </td>
+                <td>
+                    <input name="postdate" type="date" class="input" size="35" required />
+                </td>
+            </tr>
+            <tr>
+                <td height="23" style="font-weight: bold">
+                    <div align="right">
+                        <label for="fixdate">Fix Date</label>
+                    </div>
+                </td>
+                <td>
+                    <input name="fixdate" type="date" class="input" size="35" />
+                </td>
+            </tr>
+            <tr>
+                <td height="23" style="font-weight: bold">
+                    <div align="right">
+                        <label for="fixed">Fixed?</label>
+                    </div>
+                </td>
+                <td>
+                    <input name="fixed" type="checkbox" class="input" size="35" />
+                </td>
+            </tr>
+             <tr>
+                <td height="23"></td>
+                <td>
+                    <div align="left">
+                        <input type="submit" name="submit" value="Save" />
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br><br><br><br><br><br>
 </main>
 </body>
 <footer>
