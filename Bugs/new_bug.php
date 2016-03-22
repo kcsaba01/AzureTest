@@ -44,7 +44,7 @@
                     </div>
                 </td>
                 <td>
-                    <input name="desc" type="text" size="200" required />
+                    <input name="desc" type="text" class="input" size="35" required />
                 </td>
             </tr>
             <tr>
