@@ -6,7 +6,7 @@
  * Time: 22:04
  * submitting a bug to the database
  */
-$msg = "";
+$msg = "test";
 if(isset($_POST["submit"]))
 {
     $title = $_POST["title"];
