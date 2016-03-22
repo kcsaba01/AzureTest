@@ -6,7 +6,7 @@
  * Time: 22:04
  * submitting a bug to the database
  */
-$msg = "test";
+$msg = "";
 if(isset($_POST["submit"]))
 {
     $title = $_POST["title"];
@@ -15,7 +15,6 @@ if(isset($_POST["submit"]))
     $fixdate = $_POST["fixdate"];
     $fixed = $_POST["fixed"];
     $userid = $login_user; //this can be the logged in user
-    echo $title . $descr;
     $title = mysqli_real_escape_string($db, $title);
     $desc = mysqli_real_escape_string($db, $desc);
     //$postdate = mysqli_real_escape_string($db, $postdate);
