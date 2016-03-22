@@ -21,12 +21,6 @@ if(isset($_POST["submit"]))
     //$descr = mysqli_real_escape_string($db, $descr);
     //$postdate = mysqli_real_escape_string($db, $postdate);
     //$fixdate = mysqli_real_escape_string($db, $fixdate);
-    $query = mysqli_query($db, "INSERT INTO bugs (title, postDate, userID) VALUES ('test124', '2015-03-03', 131)") or die(mysqli_error($db));
-    if($query)
-    {
-        $msg = "Thank You! The bug has been logged.";
-    }
-/**
     $sql="SELECT title FROM bugs WHERE title='$title'";
     $result=mysqli_query($db,$sql);
     $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
@@ -36,13 +30,12 @@ if(isset($_POST["submit"]))
     }
     else
     {
-        $query = mysqli_query($db, "INSERT INTO bugs (title, postDate, userID) VALUES ('test123', '2015-03-03', 131)") or die(mysqli_error($db));
+        $query = mysqli_query($db, "INSERT INTO bugs (title, postDate, userID) VALUES ('test126', '2015-03-03', 131)") or die(mysqli_error($db));
         if($query)
         {
             $msg = "Thank You! The bug has been logged.";
         }
 
     }
- */
 }
 ?>
