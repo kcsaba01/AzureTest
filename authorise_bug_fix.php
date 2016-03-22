@@ -39,7 +39,7 @@ include ("utility/authbugfix.php");
             <form method="post" action="">
                 <label>Bug title:</label><br>
                 <input type="text" name="title" placeholder="title" /><br><br><br><br><br>
-                <input type="submit" name="submit" value="Authorise" />
+                <input type="submit" name="submit" value="Authorise" /> <br><br><br>
             </form>
             <div class="error"><?php echo $msg;?></div>
         </div>
