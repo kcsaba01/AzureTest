@@ -40,16 +40,16 @@ include("/utility/check.php");
                     <td><a href="Bugs/retrieve_bug.php"> <H4>Retrieve Bug</H4></td>
                 </tr>
                 <tr>
-                    <td><a href="Bugs/new_bug.php"> <H4">Log New Bug</H4></td>
+                    <td><a href="Bugs/new_bug.php"> <H4>Log New Bug</H4></td>
                 </tr>
                 <tr>
-                    <td><a href="Bugs/fixed_bug.php"> <H4 align=center style="color:lightgray; background-color: black; font-size: 25px">Mark Bug Fixed</H4></td>
+                    <td><a href="Bugs/fixed_bug.php"> <H4>Mark Bug Fixed</H4></td>
                 </tr>
                 <tr>
-                    <td><a href="Bugs/comment_bug.php"> <H4 align=center style="color:lightgray; background-color: black; font-size: 25px">Comment Bug</H4></td>
+                    <td><a href="Bugs/comment_bug.php"> <H4>Comment Bug</H4></td>
                 </tr>
                 <tr>
-                    <td><a href="Bugs/add_att_bug.php"> <H4 align=center style="color:lightgray; background-color: black; font-size: 25px ">Add Attachment</H2></td>
+                    <td><a href="Bugs/add_att_bug.php"> <H4>Add Attachment</H4></td>
                 </tr>
             </table>
         </div>
