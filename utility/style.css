@@ -119,7 +119,7 @@ body
 }
 input[type=text],input[type=password],input[type=email], input[type=number], input[type=date]
 {
-	width:280px;
+	width:380px;
 	padding:10px;
 	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 	font-size:20px;
