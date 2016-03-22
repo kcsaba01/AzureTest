@@ -37,10 +37,10 @@ include("/utility/check.php");
             <br><br>
             <table style="width:300">
                 <tr>
-                    <td><a href="Bugs/retrieve_bug.php"> <H4 align=center style="color:lightgray; background-color: black; font-size: 25px">Retrieve Bug</H4></td>
+                    <td><a href="Bugs/retrieve_bug.php"> <H4 align=center style="color:lightgray; margin: -10px -40px; background-color: black; font-size: 25px">Retrieve Bug</H4></td>
                 </tr>
                 <tr>
-                    <td><a href="Bugs/new_bug.php"> <H4 align=center style="color:lightgray; background-color: black; font-size: 25px">Log New Bug</H4></td>
+                    <td><a href="Bugs/new_bug.php"> <H4 align=center style="color:lightgray; margin: -10px -40px; background-color: black; font-size: 25px">Log New Bug</H4></td>
                 </tr>
                 <tr>
                     <td><a href="Bugs/fixed_bug.php"> <H4 align=center style="color:lightgray; background-color: black; font-size: 25px">Mark Bug Fixed</H4></td>
