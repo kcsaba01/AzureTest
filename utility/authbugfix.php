@@ -17,7 +17,7 @@ if(isset($_POST["submit"]))
     else
     {
         $title = $_POST['title'];
-        $title = mysqli_real_escape_string($db, $$title);
+        $title = mysqli_real_escape_string($db, $title);
         $sql = "SELECT title FROM bugs WHERE title='$title'";
         $result = mysqli_query($db, $sql);
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
