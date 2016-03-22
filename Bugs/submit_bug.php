@@ -14,7 +14,9 @@ if(isset($_POST["submit"]))
     $postdate = $_POST["postdate"];
     $fixdate = $_POST["fixdate"];
     $fixed = $_POST["fixed"];
-    //$userid = $login_user; //this can be the logged in user
+    $dateObj = DateTime::createFromFormat('d/m/Y', $postdate);
+    $newpostdate = $dateObj->format('Y-m-d');
+        //$userid = $login_user; //this can be the logged in user
     $title = mysqli_real_escape_string($db, $title);
     $descr = mysqli_real_escape_string($db, $descr);
     //$postdate = mysqli_real_escape_string($db, $postdate);
@@ -28,7 +30,7 @@ if(isset($_POST["submit"]))
     }
     else
     {
-        $query = mysqli_query($db, "INSERT INTO bugs (title, desc, postDate, fixDate, userID) VALUES ('$title', '$descr', '$postdate', '$fixdate', 131)")or die(mysqli_error($db));
+        $query = mysqli_query($db, "INSERT INTO bugs (title, desc, postDate, userID) VALUES ('$title', '$descr', '$newpostdate', 131)")or die(mysqli_error($db));
         if($query)
         {
             $msg = "Thank You! The bug has been logged.";
