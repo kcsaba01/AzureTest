@@ -36,7 +36,6 @@ include("/utility/check.php");
             <h3>Select Task</h3>
             <br><br>
             <table style="width:300">
-
                 <tr>
                     <td><a href="Bugs/retrieve_bug.php"> <H3 align=center style="color:lightgray; background-color: black; font-size: 25px">Retrieve Bug</H3></td>
                 </tr>
@@ -44,13 +43,13 @@ include("/utility/check.php");
                     <td><a href="Bugs/new_bug.php"> <H3 align=center style="color:lightgray; background-color: black; font-size: 25px">Log New Bug</H3></td>
                 </tr>
                 <tr>
-                    <td><a href="Bugs/fixed_bug.php"> <H2 align=center style="color:lightgray; background-color: black; font-size: 25px">Mark Bug Fixed</H2></td>
+                    <td><a href="Bugs/fixed_bug.php"> <H3 align=center style="color:lightgray; background-color: black; font-size: 25px">Mark Bug Fixed</H3></td>
                 </tr>
                 <tr>
-                    <td><a href="Bugs/comment_bug.php"> <H2 align=center style="color:lightgray; background-color: black; font-size: 25px">Comment Bug</H2></td>
+                    <td><a href="Bugs/comment_bug.php"> <H3 align=center style="color:lightgray; background-color: black; font-size: 25px">Comment Bug</H3></td>
                 </tr>
                 <tr>
-                    <td><a href="Bugs/add_att_bug.php"> <H2 align=center style="color:lightgray; background-color: black; font-size: 25px ">Add Attachment</H2></td>
+                    <td><a href="Bugs/add_att_bug.php"> <H3 align=center style="color:lightgray; background-color: black; font-size: 25px ">Add Attachment</H2></td>
                 </tr>
             </table>
         </div>
