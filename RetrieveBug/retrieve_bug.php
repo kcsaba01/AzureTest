@@ -61,7 +61,7 @@ include("../utility/check.php");
             // output data of each row
             while ($rrow = mysqli_fetch_assoc($rresult)) {
                 echo "bugID: " . $rrow["bugID"];
-                echo "Title: " . $rrow["title"];
+                echo "<br>Title: " . $rrow["title"];
                 echo "Description: " . $rrow["bugs.desc"];
                 echo "Post Date: " . $rrow["postDate"] . "Fixed Date: " . $rrow["fixDate"];
                 echo "Reported by " . $rrow["userID"];
