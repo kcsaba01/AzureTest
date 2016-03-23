@@ -50,8 +50,6 @@ include("submit_comment.php");
                     <input name="commdesc" type="text" class="input" size="60" />
                 </td>
             </tr>
-            //post date and userid will be current date and current user
-
             <tr>
                 <td height="23"></td>
                 <td>

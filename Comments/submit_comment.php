@@ -20,7 +20,7 @@ if(isset($_POST["submit"]))
     $result1=mysqli_query($db,$useridq);
     $useridr=mysqli_fetch_assoc($result1);
     $userid=$useridr["userID"];
-    $query = mysqli_query($db, "INSERT INTO comments (comments.desc, postDate, userID, bugID) VALUES ('$commdesc', '$postdate', '$postdate', '$userid', $bugid)") or die(mysqli_error($db));
+    $query = mysqli_query($db, "INSERT INTO comments (comments.desc, postDate, userID, bugID) VALUES ('$commdesc', '$postdate', '$userid', $bugid)") or die(mysqli_error($db));
         if($query)
         {
             $msg = "Thank You! The comment was added.";
