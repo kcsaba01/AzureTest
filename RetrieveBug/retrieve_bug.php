@@ -6,6 +6,8 @@
  * Time: 22:00
  *
  */
+include("../utility/connection.php");
+include("../utility/check.php");
 ?>
 <!doctype html>
 <html>
@@ -24,7 +26,7 @@
     </table>
 </header>
 <main>
-    <form method="post" action="retrieve_submit.php" target="_blank">
+    <form method="post" action="">
         <table width="100%" allign =center border="0" cellpadding="10" cellspacing="10">
             <tr>
                 <td colspan="2" align="center" class="error"><?php echo $msg;?></td>
@@ -48,6 +50,22 @@
         </table>
     </form>
     <br><br><br><br><br><br>
+    <?php
+    if(isset($_POST["submit"]))
+    {
+        $rbugid = $_POST["rbugid"];
+        $rsql = "SELECT bugID, title FROM bugs WHERE bugID=$rbugid";
+        $rresult = mysqli_query($db, $rsql);
+        if (mysqli_num_rows($rresult) > 0) {
+            // output data of each row
+            while ($rrow = mysqli_fetch_assoc($rresult)) {
+                echo "bugID: " . $rrow["bugID"] . " - Title: " . $rrow["title"] . " " ;
+            }
+        } else {
+            echo "0 results";
+        }
+    }
+    ?>
 </main>
 </body>
 <footer>
