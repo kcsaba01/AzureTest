@@ -6,6 +6,9 @@
  * Time: 22:00
  *
  */
+include("../utility/connection.php");
+include("../utility/check.php");
+include("submit_comment.php");
 ?>
 <!doctype html>
 <html>
@@ -44,7 +47,7 @@
                     </div>
                 </td>
                 <td>
-                    <input name="commdesc" type="text" class="input" size="55" />
+                    <input name="commdesc" type="text" class="input" size="60" />
                 </td>
             </tr>
             //post date and userid will be current date and current user
