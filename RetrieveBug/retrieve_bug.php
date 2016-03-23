@@ -74,7 +74,7 @@ include("../utility/check.php");
         } else {
             echo "0 results";
         }
-        echo "<H2> <br> Comments23: </H2>";
+        echo "<H2> <br> Comments24: </H2>";
         $rsql2 = "SELECT * FROM comments WHERE bugID=$rbugid";
         echo "sql2";
         $rresult2 = mysqli_query($db, $rsql2);
