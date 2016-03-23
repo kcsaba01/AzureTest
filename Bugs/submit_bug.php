@@ -24,7 +24,7 @@ if(isset($_POST["submit"]))
     $sql="SELECT title FROM bugs WHERE title='$title'";
     $useridq="SELECT userID FROM users WHERE username='$login_user'";
     $useridr=mysqli_query($db,$useridq);
-    $userid=mysqli_fetch_array($useridr,MYSQLI_ASSOC);
+    $userid=$useridr["userID"];
     $result=mysqli_query($db,$sql);
     $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
     if(mysqli_num_rows($result) == 1)
