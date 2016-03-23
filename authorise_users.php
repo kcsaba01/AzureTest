@@ -45,7 +45,7 @@ else
             <div class="error"><?php echo $msg;?></div>
         </div>
     </div>
-    <br><br>
+    <br><br><br><br><br>
 </main>
 </body>
 <footer>
