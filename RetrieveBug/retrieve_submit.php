@@ -14,21 +14,15 @@ $rdesc="2";
 if(isset($_POST["submit"]))
 {
     $rbugid = $_POST["rbugid"];
-    //$commdesc = $_POST["commdesc"];
-    //$postdate = date("Y-m-d");
-    $rbugid = mysqli_real_escape_string($db, $bugid);
-    //$commdesc = mysqli_real_escape_string($db, $commdesc);
-    //$sql="SELECT commentID FROM comments WHERE bugID='$bugid'";
-    //Getting the login id for the logged in user
-    $sql="SELECT bugID, title, bugs.desc,postDate, fix Date, fixed, userID, approved FROM users WHERE bugID='$rbugid'";
-    $rresult=mysqli_query($db,$sql);
-    if ($rresult)
-    {
-        $rresult1=mysqli_fetch_assoc($rresult);
-        $rtitle=$rresult1["title"];
-        $rdesc=$rresult1["bugs.desc"];
-        $ruserid=$rresult1["userID"];
-    } else {$msg="No bug with this ID";}
+    $sql = "SELECT bugID,title,bugs.desc,posDate,fixDate,fixed,userID,approved FROM bugs WHERE bugID=$rbugid";
+    $result = mysqli_query($db, $sql);
+    if (mysqli_num_rows($result) > 0) {
+    // output data of each row
+    while($row = mysqli_fetch_assoc($result)) {
+        echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+    }
+} else {
+    echo "0 results";
 }
 ?>
 ?>
