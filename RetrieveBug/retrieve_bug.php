@@ -62,14 +62,14 @@ include("../utility/check.php");
             while ($rrow = mysqli_fetch_assoc($rresult)) {
                 echo "Bug ID: " . $rrow["bugID"];
                 echo "<br>Title: " . $rrow["title"];
-                echo "<br>Description: " . $rrow["bugs.desc"];
-                echo "<br>Post Date: " . $rrow["postDate"] . "Fixed Date: " . $rrow["fixDate"];
+                echo "<br>Description: " . $rrow["desc"];
+                echo "<br>Post Date: " . $rrow["postDate"] . "  Fixed Date: " . $rrow["fixDate"];
                 echo "<br>Reported by " . $rrow["userID"];
                 if ($rrow["fixed"] == 0) {$rfixed='Not Fixed';}
                 else $rfixed='Fixed';
                 if ($rrow["approved"] == 0) {$rapproved = 'Not approved';}
                 else $rapproved = 'Approved';
-                echo "<br>Fixed Status: " . $rfixed . "Approved Status: " . $rapproved;
+                echo "<br>Fixed Status: " . $rfixed . "  Approved Status: " . $rapproved;
             }
         } else {
             echo "0 results";
