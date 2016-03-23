@@ -25,7 +25,7 @@ if(isset($_POST["submit"]))
     $useridq="SELECT userID FROM users WHERE username='$login_user'";
     $result1=mysqli_query($db,$useridq);
     $useridr=mysqli_fetch_assoc($result1);
-    $useridq=$useridr["userID"];
+    $userid=$useridr["userID"];
     $result=mysqli_query($db,$sql);
     $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
     if(mysqli_num_rows($result) == 1)
