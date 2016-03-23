@@ -6,7 +6,7 @@
  * Time: 22:04
  * submitting a bug to the database
  */
-$msg = "$fixed";
+$msg = "";
 if(isset($_POST["submit"]))
 {
     $title = $_POST["title"];
@@ -33,7 +33,7 @@ if(isset($_POST["submit"]))
         $query = mysqli_query($db, "INSERT INTO bugs (title, bugs.desc, postDate, fixDate, fixed, userID) VALUES ('$title', '$descr', '$postdate', '$fixdate', $fixedint , 131)") or die(mysqli_error($db));
         if($query)
         {
-            $msg = "Thank You! The bug has been logged.". $fixed;
+            $msg = "Thank You! The bug has been logged.". $_SESSION['user'];
         }
 
     }
