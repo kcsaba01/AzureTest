@@ -6,6 +6,31 @@
  * Time: 22:04
  * Retrieve a bug from the database
  */
+include("../utility/connection.php");
+include("../utility/check.php");
+$msg = "";
+$rtitle="1";
+$rdesc="2";
+if(isset($_POST["submit"]))
+{
+    $rbugid = $_POST["rbugid"];
+    //$commdesc = $_POST["commdesc"];
+    //$postdate = date("Y-m-d");
+    $rbugid = mysqli_real_escape_string($db, $bugid);
+    //$commdesc = mysqli_real_escape_string($db, $commdesc);
+    //$sql="SELECT commentID FROM comments WHERE bugID='$bugid'";
+    //Getting the login id for the logged in user
+    $sql="SELECT bugID, title, bugs.desc,postDate, fix Date, fixed, userID, approved FROM users WHERE username='$rbugid'";
+    $rresult=mysqli_query($db,$sql);
+    if ($rresult)
+    {
+        $rresult1=mysqli_fetch_assoc($rresult);
+        $rtitle=$rresult1["title"];
+        $rdesc=$rresult1["bugs.desc"];
+        $ruserid=$rresult1["userID"];
+    } else {$msg="No bug with this ID";}
+}
+?>
 ?>
 <!doctype html>
 <html>
@@ -24,6 +49,9 @@
     </table>
 </header>
 <main>
+    <?php echo $msg;?>
+    <?php echo $rtitle;?>
+    <?php echo $rdesc;?>
 </main>
 </body>
 <footer>

@@ -6,9 +6,6 @@
  * Time: 22:00
  *
  */
-include("../utility/connection.php");
-include("../utility/check.php");
-//include("retrieve_submit.php");
 ?>
 <!doctype html>
 <html>
