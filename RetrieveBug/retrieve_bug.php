@@ -69,25 +69,27 @@ include("../utility/check.php");
                 else $rfixed='Fixed';
                 if ($rrow["approved"] == 0) {$rapproved = 'Not approved';}
                 else $rapproved = 'Approved';
-                echo "<br>Fixed Status: " . $rfixed . "  Approved Status: " . $rapproved;
+                echo "<br>Fixed Status: " . $rfixed . "    Approved Status: " . $rapproved;
             }
         } else {
             echo "0 results";
         }
-        echo "<H2> <br> Comments: </H2>";
+        echo "<H2> <br> Comments22: </H2>";
         $rsql2 = "SELECT * FROM comments WHERE bugID=$rbugid";
+        echo "sql2";
         $rresult2 = mysqli_query($db, $rsql2);
+        echo "sql3";
         if (mysqli_num_rows($rresult2) > 0) {
+            echo "sql4";
             // output data of each row
             while ($rrow2 = mysqli_fetch_assoc($rresult2)) {
+                echo "*";
                 echo "Comment ID: " . $rrow2["commentID"];
                 echo "<br>Description: " . $rrow2["desc"];
                 echo "<br>Post Date: " . $rrow2["postDate"];
                 echo "<br>Posted by: " . $rrow2["userID"] . " ---------------------------------";
             }
-        } else {
-            echo "No comments on this bug";
-        }
+        } else echo "No comments on this bug";
     }
     ?>
    </H3>
