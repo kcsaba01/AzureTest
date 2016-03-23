@@ -64,7 +64,7 @@ include("../utility/check.php");
                 echo "<br>Title: " . $rrow["title"];
                 echo "<br>Description: " . $rrow["desc"];
                 echo "<br>Post Date: " . $rrow["postDate"] . "  Fixed Date: " . $rrow["fixDate"];
-                echo "<br>Reported by " . $rrow["userID"];
+                echo "<br>Reported by: " . $rrow["userID"];
                 if ($rrow["fixed"] == 0) {$rfixed='Not Fixed';}
                 else $rfixed='Fixed';
                 if ($rrow["approved"] == 0) {$rapproved = 'Not approved';}
@@ -74,6 +74,7 @@ include("../utility/check.php");
         } else {
             echo "0 results";
         }
+        echo "<H1> <br> Comments </H1>";
     }
     ?>
    </H3>
