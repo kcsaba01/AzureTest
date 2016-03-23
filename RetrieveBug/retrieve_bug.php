@@ -31,7 +31,7 @@
             </tr>
             <tr>
                 <td style="font-weight: bold">
-                    <div align="right"><label for="name">Bug ID</label></div>
+                    <div align="right"><label for="rbugid">Bug ID</label></div>
                 </td>
                 <td>
                     <input name="rbugid" type="number" class="input" size="25"  required />
