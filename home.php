@@ -46,7 +46,7 @@ include("/utility/check.php");
                     <td><a href="Bugs/fixed_bug.php"> <H4>Mark Bug Fixed</H4></td>
                 </tr>
                 <tr>
-                    <td><a href="Bugs/comment_bug.php"> <H4>Comment Bug</H4></td>
+                    <td><a href="Comments/comment_bug.php"> <H4>Comment Bug</H4></td>
                 </tr>
                 <tr>
                     <td><a href="Bugs/add_att_bug.php"> <H4>Add Attachment</H4></td>
