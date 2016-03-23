@@ -30,7 +30,9 @@
         <br><br>
         <form method="post" action="">
             <label>Bug title:</label><br>
-            <input type="text" name="title" placeholder="Bug title" /><br><br><br><br><br>
+            <input type="text" name="title" placeholder="Bug title" />
+            <input type="date" name="fdate" placeholder="Fixed date" />
+            <br><br><br><br><br>
             <input type="submit" name="submit" value="Fixed" />
         </form>
         <div class="error"><?php echo $msg;?></div>
