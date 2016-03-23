@@ -25,6 +25,5 @@ if(isset($_POST["submit"]))
         {
             $msg = "Thank You! The comment was added.";
         } else {$msg="Something went wrong!";}
-
 }
 ?>
