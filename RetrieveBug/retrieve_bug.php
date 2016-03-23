@@ -74,7 +74,7 @@ include("../utility/check.php");
         } else {
             echo "0 results";
         }
-        echo "<H1> <br> Comments </H1>";
+        echo "<H2> <br> Comments </H2>";
     }
     ?>
    </H3>
