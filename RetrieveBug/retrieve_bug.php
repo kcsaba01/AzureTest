@@ -50,6 +50,7 @@ include("../utility/check.php");
         </table>
     </form>
     <br><br><br><br><br><br>
+   <H1>
     <?php
     if(isset($_POST["submit"]))
     {
@@ -66,6 +67,7 @@ include("../utility/check.php");
         }
     }
     ?>
+   </H1>
 </main>
 </body>
 <footer>
