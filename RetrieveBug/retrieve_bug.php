@@ -50,7 +50,7 @@ include("../utility/check.php");
         </table>
     </form>
     <br><br><br><br><br><br>
-   <H1>
+   <H3>
     <?php
     if(isset($_POST["submit"]))
     {
@@ -60,14 +60,23 @@ include("../utility/check.php");
         if (mysqli_num_rows($rresult) > 0) {
             // output data of each row
             while ($rrow = mysqli_fetch_assoc($rresult)) {
-                echo "bugID: " . $rrow["bugID"] . " - Title: " . $rrow["title"] . " " ;
+                echo "bugID: " . $rrow["bugID"];
+                echo "Title: " . $rrow["title"];
+                echo "Description: " . $rrow["bugs.desc"];
+                echo "Post Date: " . $rrow["postDate"] . "Fixed Date: " . $rrow["fixDate"];
+                echo "Reported by " . $rrow["userID"];
+                if ($rrow["fixed"] == 0) {$rfixed='Not Fixed';}
+                else $rfixed='Fixed';
+                if ($rrow["approved"] == 0) {$rapproved = 'Not approved';}
+                else $rapproved = 'Approved';
+                echo "Fixed Status: " . $rfixed . "Approved Status: " . $rapproved;
             }
         } else {
             echo "0 results";
         }
     }
     ?>
-   </H1>
+   </H3>
 </main>
 </body>
 <footer>
