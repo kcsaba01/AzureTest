@@ -14,7 +14,9 @@ if(isset($_POST["submit"]))
     $postdate = $_POST["postdate"];
     $fixdate = $_POST["fixdate"];
     $fixed = $_POST["fixed"];
-    $fixedint = (int)($fixed);
+    if ($fixed=='on') {$fixedint=1;}
+    else {$fixedint=0;}
+    //$fixedint = (int)($fixed);
     $postdate = date("Y-m-d", strtotime($postdate));
     $fixdate = date("Y-m-d", strtotime($fixdate));
     $title = mysqli_real_escape_string($db, $title);
