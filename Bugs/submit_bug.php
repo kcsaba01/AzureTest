@@ -23,7 +23,8 @@ if(isset($_POST["submit"]))
     $descr = mysqli_real_escape_string($db, $descr);
     $sql="SELECT title FROM bugs WHERE title='$title'";
     $useridq="SELECT userID FROM users WHERE username='$login_user'";
-    $userid=mysqli_query($db,$useridq);
+    $useridr=mysqli_query($db,$useridq);
+    $userid=mysqli_fetch_array($useridr,MYSQLI_ASSOC);
     $result=mysqli_query($db,$sql);
     $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
     if(mysqli_num_rows($result) == 1)
