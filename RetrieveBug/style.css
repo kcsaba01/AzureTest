@@ -30,60 +30,7 @@ body
 	padding: 0;
 	background-color:lightcyan;
 }
-.loginBox
-{
-	width:420px;
-	height:500px;
-	border:3px solid black;
-	border-radius:10px;	
-	padding: 10px 40px 25px;
-}
-.loginBox h3
-{
-	background-color:black;
-	color:lightgray;
-	text-align:center;
-	padding:15px;
-	border-radius: 10px 10px 0 0;
-	margin: -10px -40px;
-	border-bottom:1px solid #999;
-	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
-	font-size:24px;
-	font-weight:bold;
-}
-.adminBox
-{
-	width:420px;
-	height:200px;
-	border:3px solid black;
-	border-radius:10px;
-	padding: 10px 40px 25px;
-}
-.adminBox h3
-{
-	background-color:black;
-	color:lightgray;
-	text-align:center;
-	padding:15px;
-	border-radius: 10px 10px 0 0;
-	margin: -10px -40px;
-	border-bottom:1px solid #999;
-	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
-	font-size:24px;
-	font-weight:bold;
-}
-.adminBox h4
-{
-	background-color:black;
-	color:lightgray;
-	text-align:center;
-	padding:15px;
-	margin: -10px -40px;
-	border-bottom:1px solid #999;
-	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
-	font-size:25px;
-	font-weight:bold;
-}
+
 .userBox
 {
 	width:420px;
@@ -119,7 +66,7 @@ body
 }
 input[type=text],input[type=password],input[type=email], input[type=number], input[type=date]
 {
-	width:380px;
+	//width:380px;
 	padding:10px;
 	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 	font-size:20px;
@@ -151,12 +98,6 @@ input[type=submit]
 	font-size:18px;
 	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 }
-.hello
-{
-	font-size:36px;
-	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
-}
-
 .top-bar
 {
 	width:100%;
