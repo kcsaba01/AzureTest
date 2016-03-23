@@ -7,7 +7,6 @@
  * submitting a bug to the database
  */
 $msg = "";
-$loggeduser = $_SESSION['username'];
 if(isset($_POST["submit"]))
 {
     $title = $_POST["title"];
@@ -23,6 +22,7 @@ if(isset($_POST["submit"]))
     $title = mysqli_real_escape_string($db, $title);
     $descr = mysqli_real_escape_string($db, $descr);
     $sql="SELECT title FROM bugs WHERE title='$title'";
+    $userid="SELECT userID FROM users WHERE username='$login_user'";
     $result=mysqli_query($db,$sql);
     $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
     if(mysqli_num_rows($result) == 1)
@@ -34,7 +34,7 @@ if(isset($_POST["submit"]))
         $query = mysqli_query($db, "INSERT INTO bugs (title, bugs.desc, postDate, fixDate, fixed, userID) VALUES ('$title', '$descr', '$postdate', '$fixdate', $fixedint , 131)") or die(mysqli_error($db));
         if($query)
         {
-            $msg = "Thank You! The bug has been logged.". $login_user;
+            $msg = "Thank You! The bug has been logged.". $userid;
         }
 
     }
