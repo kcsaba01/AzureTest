@@ -48,7 +48,7 @@ include("submit_bug.php");
                     </div>
                 </td>
                 <td>
-                    <input name="desc" type="text" class="input" size="35" required />
+                    <input name="desc" type="text" class="input" size="35" />
                 </td>
             </tr>
             <tr>
