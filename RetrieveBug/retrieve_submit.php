@@ -20,7 +20,7 @@ if(isset($_POST["submit"]))
     //$commdesc = mysqli_real_escape_string($db, $commdesc);
     //$sql="SELECT commentID FROM comments WHERE bugID='$bugid'";
     //Getting the login id for the logged in user
-    $sql="SELECT bugID, title, bugs.desc,postDate, fix Date, fixed, userID, approved FROM users WHERE username='$rbugid'";
+    $sql="SELECT bugID, title, bugs.desc,postDate, fix Date, fixed, userID, approved FROM users WHERE bugID='$rbugid'";
     $rresult=mysqli_query($db,$sql);
     if ($rresult)
     {
