@@ -84,7 +84,7 @@ include("../utility/check.php");
                 echo "Comment ID: " . $rrow2["commentID"];
                 echo "<br>Description: " . $rrow2["desc"];
                 echo "<br>Post Date: " . $rrow2["postDate"];
-                echo "<br>Posted by: " . $rrow2["userID"] . " ---------------------------------";
+                echo "<br>Posted by: " . $rrow2["userID"] . " ---------------------------------<br><br>";
             }
         } else echo "No comments on this bug";
     }
