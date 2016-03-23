@@ -1,7 +1,9 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: d
- * Date: 23/03/2016
- * Time: 21:24
+ * User: Csaba Keresztessy <0811994@rgu.ac.uk>
+ * Date: 20/03/2016
+ * Time: 22:04
+ * Retrieve a bug from the database
  */
+?>
