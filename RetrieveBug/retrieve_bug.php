@@ -74,7 +74,20 @@ include("../utility/check.php");
         } else {
             echo "0 results";
         }
-        echo "<H2> <br> Comments </H2>";
+        echo "<H2> <br> Comments: </H2>";
+        $rsql2 = "SELECT * FROM comments WHERE bugID=$rbugid";
+        $rresult2 = mysqli_query($db, $rsql2);
+        if (mysqli_num_rows($rresult2) > 0) {
+            // output data of each row
+            while ($rrow2 = mysqli_fetch_assoc($rresult2)) {
+                echo "Comment ID: " . $rrow2["commentID"];
+                echo "<br>Description: " . $rrow2["desc"];
+                echo "<br>Post Date: " . $rrow2["postDate"];
+                echo "<br>Posted by: " . $rrow2["userID"] . " ---------------------------------";
+            }
+        } else {
+            echo "No comments on this bug";
+        }
     }
     ?>
    </H3>
