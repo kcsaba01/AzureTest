@@ -17,12 +17,13 @@ if(isset($_POST["submit"]))
     $rsql = "SELECT * FROM bugs WHERE bugID=251";
     $rresult = mysqli_query($db, $rsql);
     if (mysqli_num_rows($rresult) > 0) {
-    // output data of each row
-    while($rrow = mysqli_fetch_assoc($rresult)) {
-        echo "bugID: " . $rrow["bugID"]. " - Title: " . $rrow["title"]. " " . $rrow["bugs.desc"]. "<br>";
+        // output data of each row
+        while ($rrow = mysqli_fetch_assoc($rresult)) {
+            echo "bugID: " . $rrow["bugID"] . " - Title: " . $rrow["title"] . " " . $rrow["bugs.desc"] . "<br>";
+        }
+    } else {
+        echo "0 results";
     }
-} else {
-    echo "0 results";
 }
 ?>
 ?>
