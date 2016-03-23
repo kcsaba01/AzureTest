@@ -37,7 +37,7 @@ include("../utility/check.php");
                     <div align="right"><label for="name">Bug ID</label></div>
                 </td>
                 <td>
-                    <input name="rbugid" type="number" class="input" size="15"  required />
+                    <input name="rbugid" type="number" class="input" size="25"  required />
                 </td>
             </tr>
             <tr>
