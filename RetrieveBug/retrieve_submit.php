@@ -31,7 +31,7 @@ include("../utility/check.php");
     if(isset($_POST["submit"]))
     {
     $rbugid = $_POST["rbugid"];
-    $rsql = "SELECT bugID, title FROM bugs WHERE bugID=251";
+    $rsql = "SELECT bugID, title FROM bugs WHERE bugID=$rbugid";
     $rresult = mysqli_query($db, $rsql);
     if (mysqli_num_rows($rresult) > 0) {
         // output data of each row
