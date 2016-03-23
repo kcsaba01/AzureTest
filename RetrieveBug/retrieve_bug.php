@@ -27,7 +27,7 @@ include("../utility/check.php");
     </table>
 </header>
 <main>
-    <form method="post" action="retrieve_submit.php">
+    <form method="post" action="retrieve_submit.php" target="_blank">
         <table width="100%" allign =center border="0" cellpadding="10" cellspacing="10">
             <tr>
                 <td colspan="2" align="center" class="error"><?php echo $msg;?></td>
