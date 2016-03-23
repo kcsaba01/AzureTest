@@ -74,13 +74,10 @@ include("../utility/check.php");
         } else {
             echo "0 results";
         }
-        echo "<H2> <br> Comments245: </H2>";
+        echo "<H2> <br> Comments: </H2>";
         $rsql2 = "SELECT * FROM comments WHERE bugID=$rbugid";
-        echo "sql2";
         $rresult2 = mysqli_query($db, $rsql2);
-        echo "sql3";
         if (mysqli_num_rows($rresult2) > 0) {
-            echo "sql4";
             // output data of each row
             while ($rrow2 = mysqli_fetch_assoc($rresult2)) {
                 echo "*";
