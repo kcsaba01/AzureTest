@@ -7,6 +7,7 @@
  * Adding a new bug
  */
 include("../utility/connection.php");
+include("../utility/check.php");
 include("submit_bug.php");
 ?>
 
