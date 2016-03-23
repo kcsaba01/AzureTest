@@ -8,24 +8,7 @@
  */
 include("../utility/connection.php");
 include("../utility/check.php");
-$msg = "";
-$rtitle="1";
-$rdesc="3";
-if(isset($_POST["submit"]))
-{
-    $rbugid = $_POST["rbugid"];
-    $rsql = "SELECT bugID, title FROM bugs WHERE bugID=251";
-    $rresult = mysqli_query($db, $rsql);
-    if (mysqli_num_rows($rresult) > 0) {
-        // output data of each row
-        while ($rrow = mysqli_fetch_assoc($rresult)) {
-            echo "bugID: " . $rrow["bugID"] . " - Title: " . $rrow["title"] . " " ;
-        }
-    } else {
-        echo "0 results";
-    }
-}
-?>
+
 ?>
 <!doctype html>
 <html>
@@ -44,9 +27,22 @@ if(isset($_POST["submit"]))
     </table>
 </header>
 <main>
-    <?php echo $msg;?>
-    <?php echo $rtitle;?>
-    <?php echo $rdesc;?>
+    <?php
+    if(isset($_POST["submit"]))
+    {
+    $rbugid = $_POST["rbugid"];
+    $rsql = "SELECT bugID, title FROM bugs WHERE bugID=251";
+    $rresult = mysqli_query($db, $rsql);
+    if (mysqli_num_rows($rresult) > 0) {
+        // output data of each row
+        while ($rrow = mysqli_fetch_assoc($rresult)) {
+            echo "bugID: " . $rrow["bugID"] . " - Title: " . $rrow["title"] . " " ;
+        }
+    } else {
+        echo "0 results";
+    }
+    }
+    ?>
 </main>
 </body>
 <footer>
