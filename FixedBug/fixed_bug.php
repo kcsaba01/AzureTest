@@ -23,7 +23,21 @@
         </tr>
     </table>
 </header>
-<main>
+<div align="center">
+    <br><br>
+    <div class="userBox">
+        <h3>Mark Bug fixed</h3>
+        <br><br>
+        <form method="post" action="">
+            <label>Bug title:</label><br>
+            <input type="text" name="title" placeholder="ftitle" /><br><br><br><br><br>
+            <input type="submit" name="submit" value="Fixed" />
+        </form>
+        <div class="error"><?php echo $msg;?></div>
+    </div>
+</div>
+<br><br>
+<br><br><br>
 </main>
 </body>
 <footer>

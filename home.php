@@ -43,7 +43,7 @@ include("/utility/check.php");
                     <td><a href="Bugs/new_bug.php"> <H4>Log New Bug</H4></td>
                 </tr>
                 <tr>
-                    <td><a href="Bugs/fixed_bug.php"> <H4>Mark Bug Fixed</H4></td>
+                    <td><a href="FixedBug/fixed_bug.php"> <H4>Mark Bug Fixed</H4></td>
                 </tr>
                 <tr>
                     <td><a href="Comments/comment_bug.php"> <H4>Comment Bug</H4></td>
