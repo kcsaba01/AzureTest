@@ -37,7 +37,7 @@ include("/utility/check.php");
             <br><br>
             <table style="width:300">
                 <tr>
-                    <td><a href="Bugs/retrieve_bug.php"> <H4>Retrieve Bug</H4></td>
+                    <td><a href="RetrieveBug/retrieve_bug.php"> <H4>Retrieve Bug</H4></td>
                 </tr>
                 <tr>
                     <td><a href="Bugs/new_bug.php"> <H4>Log New Bug</H4></td>
