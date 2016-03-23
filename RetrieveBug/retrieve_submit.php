@@ -19,7 +19,7 @@ if(isset($_POST["submit"]))
     if (mysqli_num_rows($rresult) > 0) {
         // output data of each row
         while ($rrow = mysqli_fetch_assoc($rresult)) {
-            echo "bugID: " . $rrow["bugID"] . " - Title: " . $rrow["title"] . " " . $rrow["bugs.desc"] . "<br>";
+            echo "bugID: " . $rrow["bugID"] . " - Title: " . $rrow["title"] . " " ;
         }
     } else {
         echo "0 results";
