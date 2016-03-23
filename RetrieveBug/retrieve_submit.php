@@ -10,16 +10,16 @@ include("../utility/connection.php");
 include("../utility/check.php");
 $msg = "";
 $rtitle="1";
-$rdesc="2";
+$rdesc="3";
 if(isset($_POST["submit"]))
 {
     $rbugid = $_POST["rbugid"];
-    $sql = "SELECT bugID,title,bugs.desc,posDate,fixDate,fixed,userID,approved FROM bugs WHERE bugID=$rbugid";
-    $result = mysqli_query($db, $sql);
-    if (mysqli_num_rows($result) > 0) {
+    $rsql = "SELECT * FROM bugs WHERE bugID=$rbugid";
+    $rresult = mysqli_query($db, $rsql);
+    if (mysqli_num_rows($rresult) > 0) {
     // output data of each row
-    while($row = mysqli_fetch_assoc($result)) {
-        echo "bugID: " . $row["bugID"]. " - Title: " . $row["title"]. " " . $row["bugs.desc"]. "<br>";
+    while($rrow = mysqli_fetch_assoc($rresult)) {
+        echo "bugID: " . $rrow["bugID"]. " - Title: " . $rrow["title"]. " " . $rrow["bugs.desc"]. "<br>";
     }
 } else {
     echo "0 results";
