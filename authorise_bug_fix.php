@@ -12,7 +12,7 @@ if ($login_user !="admin")
     header("location: noauth.php");
 }
 else
-include ("utility/authbugfix.php");
+include("Bugs/authbugfix.php");
 ?>
 <!doctype html>
 <html>
