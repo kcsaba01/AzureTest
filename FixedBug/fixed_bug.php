@@ -7,12 +7,6 @@
  * Bug Fix Authorisation page for admin
  */
 include("../utility/connection.php");
-include("utility/check.php");
-if ($login_user !="admin") //check if the user is admin, if not a Not Authorised page is displayed
-{
-    header("location: /noauth.php");
-}
-else
 $msg = "";
 if(isset($_POST["submit"]))
 {
