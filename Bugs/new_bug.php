@@ -26,7 +26,7 @@ include("submit_bug.php");
     </table>
 </header>
 <main>
-    <form method="post" action=""> //form to get the relevant fields, the style is defined in the utility/style.css file
+    <form method="post" action=""> <!--form to get the relevant fields, the style is defined in the utility/style.css file-->
         <table width="100%" allign =center border="0" cellpadding="10" cellspacing="10">
             <tr>
                 <td colspan="2" align="center" class="error"><?php echo $msg;?></td>
@@ -39,7 +39,7 @@ include("submit_bug.php");
                     <input name="title" type="text" class="input" required />
                 </td>
             </tr>
-            <tr> //Description field
+            <tr> <!--Description field-->
                 <td height="23" style="font-weight: bold">
                     <div align="right">
                         <label for="desc">Description</label>
@@ -49,7 +49,7 @@ include("submit_bug.php");
                     <input name="desc" type="text" class="input" />
                 </td>
             </tr>
-            <tr> // Post Date is required. The user has the option to select the date
+            <tr> <!-- Post Date is required. The user has the option to select the date-->
                 <td height="23" style="font-weight: bold">
                     <div align="right">
                         <label for="postdate">Post Date</label>
@@ -59,7 +59,7 @@ include("submit_bug.php");
                     <input name="postdate" type="date" class="input"required />
                 </td>
             </tr>
-            <tr> //Fix date, not mandatory field
+            <tr> <!--Fix date, not mandatory field-->
                 <td height="23" style="font-weight: bold">
                     <div align="right">
                         <label for="fixdate">Fix Date</label>
@@ -69,7 +69,7 @@ include("submit_bug.php");
                     <input name="fixdate" type="date" class="input"/>
                 </td>
             </tr>
-            <tr> //checkbox to mark a bug fixed during the log process, by default is not fixed
+            <tr> <!--checkbox to mark a bug fixed during the log process, by default is not fixed-->
                 <td height="23" style="font-weight: bold">
                     <div align="right">
                         <label for="fixed">Fixed?</label>
