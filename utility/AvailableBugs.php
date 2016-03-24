@@ -4,6 +4,7 @@
  * User: Csaba Keresztessy 0811994@rgu.ac.uk
  * Date: 20/03/2016
  * Time: 00:07
+ * This is a helper file that will print all the records in the bugs table
  */
 include("../utility/connection.php");
 ?>
@@ -32,20 +33,9 @@ include("../utility/connection.php");
         // output data of each row
         while ($row = mysqli_fetch_assoc($result)) {
             echo '<pre>'; print_r($row); echo '</pre>';
-            //  echo $row;
-            //echo "Bug ID: " . $row["bugID"];
-            //echo "<br>Title: " . $rrow["title"];
-            //echo "<br>Description: " . $rrow["desc"];
-            //echo "<br>Post Date: " . $rrow["postDate"] . "  Fixed Date: " . $rrow["fixDate"];
-            //echo "<br>Reported by: " . $rrow["userID"];
-            //if ($rrow["fixed"] == 0) {$rfixed='Not Fixed';}
-            //else $rfixed='Fixed';
-            //if ($rrow["approved"] == 0) {$rapproved = 'Not approved';}
-            //else $rapproved = 'Approved';
-            //echo "<br>Fixed Status: " . $rfixed . "    Approved Status: " . $rapproved;
         }
     } else {
-        echo "0 results";
+        echo "0 records";
     }
     ?>
 </main>
