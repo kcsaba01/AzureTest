@@ -4,7 +4,7 @@
  * User: Csaba Keresztessy <0811994@rgu.ac.uk>
  * Date: 20/03/2016
  * Time: 22:04
- * Main page for standard users
+ * Login page for all users
  */
 include('utility/login.php'); // Include Login Script
 if ((isset($_SESSION['username']) != ''))
@@ -12,7 +12,6 @@ if ((isset($_SESSION['username']) != ''))
 		header('Location: home.php');
 	}	
 ?>
-
 <!doctype html>
 <html>
 <head>
@@ -32,7 +31,7 @@ if ((isset($_SESSION['username']) != ''))
     <main>
         <div align="center">
             <br><br>
-            <div class="loginBox">
+            <div class="loginBox"> <!--logn form, with style defined in the utility/style.css file-->
                 <h3>Please login</h3>
                 <br><br>
                 <form method="post" action="">

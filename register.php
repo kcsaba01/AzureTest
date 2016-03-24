@@ -37,7 +37,7 @@ include("utility/submit.php");
                     <div align="right"><label for="name">Username</label></div>
                 </td>
                 <td>
-                    <input name="name" type="text" class="input" size="35"  required />
+                    <input name="name" type="text" class="input"required />
                 </td>
             </tr>
             <tr>
@@ -47,7 +47,7 @@ include("utility/submit.php");
                     </div>
                 </td>
                 <td>
-                    <input name="email" type="email" class="input" size="35" required />
+                    <input name="email" type="email" class="input" required />
                 </td>
             </tr>
             <tr>
@@ -57,7 +57,7 @@ include("utility/submit.php");
                     </div>
                 </td>
                 <td>
-                    <input name="password" type="password" class="input" size="35" required />
+                    <input name="password" type="password" class="input" required />
                 </td>
             </tr>
             <tr>
@@ -67,7 +67,7 @@ include("utility/submit.php");
                     </div>
                 </td>
                 <td>
-                    <input name="phone" type="number" min=1000 max=9999 class="input" size="35" required />
+                    <input name="phone" type="number" min=1000 max=9999 class="input" required />
                 </td>
         </tr>
             <tr>

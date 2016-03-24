@@ -4,15 +4,14 @@
  * User: Csaba Keresztessy <0811994@rgu.ac.uk>
  * Date: 20/03/2016
  * Time: 22:04
- * Main page for standard users
+ * Main page for all users
  */
-include("/utility/check.php");
+include("/utility/check.php"); //if the user is an admin user, session will be forwarded to the admin page
     if ($login_user =="admin")
         {header("location: adminpage.php");
         }
     else
 ?>
-
 <!doctype html>
 <html>
 <head>

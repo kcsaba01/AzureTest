@@ -13,7 +13,6 @@ if ($login_user !="admin") //check if the user is admin, if not a Not Authorised
 }
 else
 ?>
-
 <!doctype html>
 <html>
 <head>
@@ -37,7 +36,7 @@ else
             <h3>Select Task</h3>
             <br><br>
             <table style="width:300">
-                <tr>
+                <tr> <!--2 tasks that are available only for admin user-->
                     <td><a href="authorise_users.php"> <H4>Authorise Users</H4></td>
                 </tr>
                 <tr>
@@ -48,8 +47,6 @@ else
         </div>
     </div>
     <br><br>
-
-
     <br><br>
 </main>
 </body>

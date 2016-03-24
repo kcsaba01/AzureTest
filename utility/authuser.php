@@ -4,10 +4,10 @@
  * User: Csaba Keresztessy <0811994@rgu.ac.uk>
  * Date: 20/03/2016
  * Time: 22:05
- * Authorises a user
+ * Authorises a user. Only for "admin user"
  */
 include('connection.php');
-$msg = "";
+$msg = ""; //message to communidate with the user
 if(isset($_POST["submit"]))
 {
     if(empty($_POST["username"]))
@@ -17,7 +17,7 @@ if(isset($_POST["submit"]))
     else
     {
         $username = $_POST['username'];
-        $username = mysqli_real_escape_string($db, $username);
+        $username = mysqli_real_escape_string($db, $username); //removing special chars
         $sql = "SELECT username FROM users WHERE username='$username'";
         $result = mysqli_query($db, $sql);
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);

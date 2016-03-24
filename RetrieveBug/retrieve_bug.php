@@ -77,7 +77,7 @@ include("../utility/check.php");
         $rsql2 = "SELECT * FROM comments WHERE bugID=$rbugid";
         $rresult2 = mysqli_query($db, $rsql2);
         if (mysqli_num_rows($rresult2) > 0) {
-            // output data of each row
+            // each comment is separated by -------
             while ($rrow2 = mysqli_fetch_assoc($rresult2)) {
                 echo "*";
                 echo "Comment ID: " . $rrow2["commentID"];

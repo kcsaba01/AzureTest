@@ -8,7 +8,7 @@
 session_start();
 include("utility/connection.php"); //Establishing connection with the database
 
-$error = ""; //Variable for storing our errors.
+$error = ""; //Variable for storing errors.
 if(isset($_POST["register"])) {header("location:register.php");} //loads the registration page
 if(isset($_POST["submit"]))
 {
@@ -43,7 +43,6 @@ if(isset($_POST["submit"]))
         }else
         {
             $error = "Incorrect username/password or the account waits for approval";
-
         }
 
     }

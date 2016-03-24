@@ -45,7 +45,7 @@ include("../utility/connection.php");
         <tr>
             <td><H2 align="left"> <i>Contact Helpdesk</i></H2> <p align="left">512 University Street<br>Aberdeen AB10 7QG<br> 01224 26<b> 0000</b></p></td>
             <td><H2 align="center"> <i> Available bugs</i></H2></td>
-            <td><H2 align="right"> <bi>Comment Bug</bi></H2></td>
+            <td><H2 align="right"> <bi>Helper file</bi></H2></td>
         </tr>
     </table>
 </footer>

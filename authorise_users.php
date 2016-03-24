@@ -14,7 +14,6 @@ if ($login_user !="admin")
 }
 else
 ?>
-
 <!doctype html>
 <html>
 <head>
@@ -37,7 +36,7 @@ else
         <div class="adminBox">
             <h3>Authorise user</h3>
             <br><br>
-            <form method="post" action="">
+            <form method="post" action=""> <!--form to read the username-->
                 <label>Username:</label><br>
                 <input type="text" name="username" placeholder="username" /><br><br><br><br><br>
                 <input type="submit" name="submit" value="Authorise" />
