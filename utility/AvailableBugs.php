@@ -29,10 +29,10 @@ include("../utility/connection.php");
     $sql = "SELECT * FROM bugs";
     $result = mysqli_query($db, $sql);
     if (mysqli_num_rows($result) > 0) {
-        echo '<pre>'; print_r($result); echo '</pre>';
         // output data of each row
-        //while ($row = mysqli_fetch_assoc($result)) {
-          //  echo $row;
+        while ($row = mysqli_fetch_assoc($result)) {
+            echo '<pre>'; print_r($row); echo '</pre>';
+            //  echo $row;
             //echo "Bug ID: " . $row["bugID"];
             //echo "<br>Title: " . $rrow["title"];
             //echo "<br>Description: " . $rrow["desc"];
@@ -43,7 +43,7 @@ include("../utility/connection.php");
             //if ($rrow["approved"] == 0) {$rapproved = 'Not approved';}
             //else $rapproved = 'Approved';
             //echo "<br>Fixed Status: " . $rfixed . "    Approved Status: " . $rapproved;
-        //
+        }
     } else {
         echo "0 results";
     }
