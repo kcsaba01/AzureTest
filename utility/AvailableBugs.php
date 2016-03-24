@@ -43,7 +43,7 @@ include("../utility/connection.php");
             //if ($rrow["approved"] == 0) {$rapproved = 'Not approved';}
             //else $rapproved = 'Approved';
             //echo "<br>Fixed Status: " . $rfixed . "    Approved Status: " . $rapproved;
-        }
+        //
     } else {
         echo "0 results";
     }
