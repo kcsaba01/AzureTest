@@ -10,7 +10,7 @@ include("../utility/connection.php");
 $msg = "";
 if(isset($_POST["submit"]))
 {
-    if(empty($_POST["title"]))
+    if(empty($_POST["ftitle"]))
     {
         $msg = "Please input a bug title.";
     }
