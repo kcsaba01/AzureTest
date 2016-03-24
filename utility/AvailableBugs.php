@@ -29,10 +29,7 @@ include("../utility/connection.php");
     $sql = "SELECT * FROM bugs";
     $result = mysqli_query($db, $sql);
     if (mysqli_num_rows($result) > 0) {
-        foreach ($result as $results) {
-            echo $results;
-            echo "<br>";
-        }
+        echo '<pre>'; print_r($result); echo '</pre>';
         // output data of each row
         //while ($row = mysqli_fetch_assoc($result)) {
           //  echo $row;
