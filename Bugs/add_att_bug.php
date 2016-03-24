@@ -28,7 +28,9 @@
         <input type="file" name="fileToUpload" id="fileToUpload">
         <input type="submit" value="Upload Image" name="submit">
     </form>
-    <?php mkdir("../uploads");
+    <?php
+    chmod("../uploads", 666);
+    echo substr(sprintf('%o', fileperms('/uploads')), -4);
     echo "done";?>
 </main>
 </body>
