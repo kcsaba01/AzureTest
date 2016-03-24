@@ -33,7 +33,6 @@ if(isset($_POST["submit"]))
             if ($query) {
                 $msg = "Bug " . $ftitle . " was successfully marked as fixed!";
             }
-
         }
     }
 }
@@ -67,6 +66,7 @@ if(isset($_POST["submit"]))
             <input type="date" name="fdate" />
             <br><br>
             <input type="submit" name="submit" value="Fixed" />
+            <br><br>
         </form>
         <div class="error"><?php echo $msg;?></div>
     </div>
