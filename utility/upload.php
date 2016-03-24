@@ -4,8 +4,8 @@ $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 //if(isset($_POST["submit"])) {
   if (mime_content_type($_FILES["fileToUpload"]["tmp_name"]) == "text/plain") {$filetypeok=1;}
-    else {$filetype=0;}
-    echo $check;
+    else {$filetypeok=0;}
+    echo $filetypeok;
     echo "<BR>";
     /$check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
     /**if($check !== false) {
