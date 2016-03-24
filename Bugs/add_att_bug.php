@@ -23,6 +23,11 @@
     </table>
 </header>
 <main>
+    <form action="../utility/upload.php" method="post" enctype="multipart/form-data">
+        <label>Select image to upload:</label>
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="submit" value="Upload Image" name="submit">
+    </form>
 </main>
 </body>
 <footer>
