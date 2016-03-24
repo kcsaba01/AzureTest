@@ -7,7 +7,7 @@ $uploadOk = 1;
     else {$filetypeok=0;}
     echo $filetypeok;
     echo "<BR>";
-    /$check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+    //$check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
     /**if($check !== false) {
         echo "File is an image - " . $check["mime"] . ".";
         $uploadOk = 1;
