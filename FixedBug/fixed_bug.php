@@ -28,7 +28,7 @@ if(isset($_POST["submit"]))
             $msg = "Sorry...There is no bug with " . $ftitle . " title";
         } else {
             //adding the approved flag
-            $query = mysqli_query($db, "UPDATE bugs SET fixed=1, fixDate='$fixDate' WHERE title='$title'") or die(mysqli_error($db));
+            $query = mysqli_query($db, "UPDATE bugs SET fixed=1, fixDate='$fdate' WHERE title='$title'") or die(mysqli_error($db));
             if ($query) {
                 $msg = "Bug " . $ftitle . " was successfully approved!";
             }
