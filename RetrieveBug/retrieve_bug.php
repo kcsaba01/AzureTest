@@ -3,8 +3,7 @@
  * Created by PhpStorm.
  * User: Csaba Keresztessy <0811994@rgu.ac.uk>
  * Date: 20/03/2016
- * Time: 22:00
- *
+ * Retrieving a bug and all the comments on the bug
  */
 include("../utility/connection.php");
 include("../utility/check.php");
@@ -31,7 +30,7 @@ include("../utility/check.php");
             <tr>
                 <td colspan="2" align="center" class="error"><?php echo $msg;?></td>
             </tr>
-            <tr>
+            <tr> //Bug ID input
                 <td style="font-weight: bold">
                     <div align="right"><label for="rbugid">Bug ID</label></div>
                 </td>
@@ -74,7 +73,7 @@ include("../utility/check.php");
         } else {
             echo "0 results";
         }
-        echo "<H2> <br> Comments: </H2>";
+        echo "<H2> <br> Comments: </H2>"; //retireving the comments on a bug
         $rsql2 = "SELECT * FROM comments WHERE bugID=$rbugid";
         $rresult2 = mysqli_query($db, $rsql2);
         if (mysqli_num_rows($rresult2) > 0) {
@@ -96,7 +95,7 @@ include("../utility/check.php");
     <table class="topBorder" style="width:100%">
         <tr>
             <td><H2 align="left"> <i>Contact Helpdesk</i></H2> <p align="left">512 University Street<br>Aberdeen AB10 7QG<br> 01224 26<b> 0000</b></p></td>
-            <td><H2 align="right"> <bi>Comment Bug</bi></H2></td>
+            <td><H2 align="right"> <bi>Retrieve Bug</bi></H2></td>
         </tr>
     </table>
 </footer>
