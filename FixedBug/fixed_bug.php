@@ -7,19 +7,26 @@
  * Bug Fix Authorisation page for admin
  */
 include("../utility/connection.php");
+include("utility/check.php");
+if ($login_user !="admin") //check if the user is admin, if not a Not Authorised page is displayed
+{
+    header("location: /noauth.php");
+}
+else
 $msg = "";
 if(isset($_POST["submit"]))
 {
     if(empty($_POST["ftitle"]))
     {
-        $msg = "Please input a bug title.";
+        $msg = "Please input a bug title."; //title cannot be empty
     }
     else
     {
         $ftitle = $_POST['ftitle'];
         $fdate = $_POST["fdate"];
+        //converting the date format
         $fdate = date("Y-m-d", strtotime($fdate));
-        $title = mysqli_real_escape_string($db, $ftitle);
+        $title = mysqli_real_escape_string($db, $ftitle); //removing special char. from title
         $sql = "SELECT title FROM bugs WHERE title='$ftitle'";
         $result = mysqli_query($db, $sql);
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
@@ -53,6 +60,7 @@ if(isset($_POST["submit"]))
         </tr>
     </table>
 </header>
+<main>
 <div align="center">
     <br><br>
     <div class="userBox">

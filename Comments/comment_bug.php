@@ -6,9 +6,9 @@
  * Time: 22:00
  *
  */
-include("../utility/connection.php");
-include("../utility/check.php");
-include("submit_comment.php");
+include("../utility/connection.php"); //creating the DB connection
+include("../utility/check.php"); //checking the logged in user identity
+include("submit_comment.php"); //php file that actually will update the DB
 ?>
 <!doctype html>
 <html>
@@ -32,15 +32,15 @@ include("submit_comment.php");
             <tr>
                 <td colspan="2" align="center" class="error"><?php echo $msg;?></td>
             </tr>
-            <tr>
+            <tr> //Bug ID field
                 <td style="font-weight: bold">
-                    <div align="right"><label for="name">Bug ID</label></div>
+                    <div align="right"><label for="bugid">Bug ID</label></div>
                 </td>
                 <td>
-                    <input name="bugid" type="number" class="input" size="35"  required />
+                    <input name="bugid" type="number" class="input" size="35" required />
                 </td>
             </tr>
-            <tr>
+            <tr> // Description of ID
                 <td height="23" style="font-weight: bold">
                     <div align="right">
                         <label for="commdesc">Description</label>
