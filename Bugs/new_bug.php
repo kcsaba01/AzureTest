@@ -3,14 +3,12 @@
  * Created by PhpStorm.
  * User: Csaba Keresztessy <0811994@rgu.ac.uk>
  * Date: 20/03/2016
- * Time: 22:00
  * Adding a new bug
  */
 include("../utility/connection.php");
 include("../utility/check.php");
 include("submit_bug.php");
 ?>
-
 <!doctype html>
 <html>
 <head>
@@ -38,7 +36,7 @@ include("submit_bug.php");
                     <div align="right"><label for="name">Bug title</label></div>
                 </td>
                 <td>
-                    <input name="title" type="text" class="input" size="35"  required />
+                    <input name="title" type="text" class="input" required />
                 </td>
             </tr>
             <tr>
@@ -48,7 +46,7 @@ include("submit_bug.php");
                     </div>
                 </td>
                 <td>
-                    <input name="desc" type="text" class="input" size="35" />
+                    <input name="desc" type="text" class="input" />
                 </td>
             </tr>
             <tr>
@@ -58,7 +56,7 @@ include("submit_bug.php");
                     </div>
                 </td>
                 <td>
-                    <input name="postdate" type="date" class="input" size="35" required />
+                    <input name="postdate" type="date" class="input"required />
                 </td>
             </tr>
             <tr>
@@ -68,7 +66,7 @@ include("submit_bug.php");
                     </div>
                 </td>
                 <td>
-                    <input name="fixdate" type="date" class="input" size="35" />
+                    <input name="fixdate" type="date" class="input"/>
                 </td>
             </tr>
             <tr>
@@ -78,7 +76,7 @@ include("submit_bug.php");
                     </div>
                 </td>
                 <td>
-                    <input name="fixed" type="checkbox" class="input" size="35" />
+                    <input name="fixed" type="checkbox" class="input"/>
                 </td>
             </tr>
              <tr>
