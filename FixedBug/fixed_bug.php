@@ -6,6 +6,36 @@
  * Time: 22:00
  * Bug Fix Authorisation page for admin
  */
+include("../utility/connection.php");
+$msg = "";
+if(isset($_POST["submit"]))
+{
+    if(empty($_POST["title"]))
+    {
+        $msg = "Please input a bug title.";
+    }
+    else
+    {
+        $ftitle = $_POST['ftitle'];
+        $fdate = $_POST["fdate"];
+        $fdate = date("Y-m-d", strtotime($fdate));
+        $title = mysqli_real_escape_string($db, $ftitle);
+        $sql = "SELECT title FROM bugs WHERE title='$ftitle'";
+        $result = mysqli_query($db, $sql);
+        $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+        if (mysqli_num_rows($result) != 1) //checking whether the bug exist
+        {
+            $msg = "Sorry...There is no bug with " . $ftitle . " title";
+        } else {
+            //adding the approved flag
+            $query = mysqli_query($db, "UPDATE bugs SET fixed=1, fixDate='$fixDate' WHERE title='$title'") or die(mysqli_error($db));
+            if ($query) {
+                $msg = "Bug " . $ftitle . " was successfully approved!";
+            }
+
+        }
+    }
+}
 ?>
 <!doctype html>
 <html>
@@ -30,7 +60,7 @@
         <br><br>
         <form method="post" action="">
             <label>Bug title:</label><br>
-            <input type="text" name="title" placeholder="Bug title" />
+            <input type="text" name="ftitle" placeholder="Bug title" />
             <label> Fixed date:</label>
             <input type="date" name="fdate" />
             <br><br>
