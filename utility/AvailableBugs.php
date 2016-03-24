@@ -30,7 +30,7 @@ include("../utility/connection.php");
     $result = mysqli_query($db, $sql);
     if (mysqli_num_rows($result) > 0) {
         foreach ($result as $results) {
-            echo $results->type;
+            echo $results;
             echo "<br>";
         }
         // output data of each row
