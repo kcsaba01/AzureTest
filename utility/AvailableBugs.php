@@ -5,7 +5,7 @@
  * Date: 20/03/2016
  * Time: 00:07
  */
-
+include("../utility/connection.php");
 ?>
 
 <!doctype html>
@@ -25,7 +25,28 @@
     </table>
 </header>
 <main>
-
+    <?php
+    $sql = "SELECT * FROM bugs";
+    $result = mysqli_query($db, $sql);
+    if (mysqli_num_rows($result) > 0) {
+        // output data of each row
+        while ($row = mysqli_fetch_assoc($result)) {
+            echo $row;
+            //echo "Bug ID: " . $row["bugID"];
+            //echo "<br>Title: " . $rrow["title"];
+            //echo "<br>Description: " . $rrow["desc"];
+            //echo "<br>Post Date: " . $rrow["postDate"] . "  Fixed Date: " . $rrow["fixDate"];
+            //echo "<br>Reported by: " . $rrow["userID"];
+            //if ($rrow["fixed"] == 0) {$rfixed='Not Fixed';}
+            //else $rfixed='Fixed';
+            //if ($rrow["approved"] == 0) {$rapproved = 'Not approved';}
+            //else $rapproved = 'Approved';
+            //echo "<br>Fixed Status: " . $rfixed . "    Approved Status: " . $rapproved;
+        }
+    } else {
+        echo "0 results";
+    }
+    ?>
 </main>
 </body>
 <footer>
