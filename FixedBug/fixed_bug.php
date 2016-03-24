@@ -30,7 +30,7 @@ if(isset($_POST["submit"]))
             //adding the approved flag
             $query = mysqli_query($db, "UPDATE bugs SET fixed=1, fixDate='$fdate' WHERE title='$title'") or die(mysqli_error($db));
             if ($query) {
-                $msg = "Bug " . $ftitle . " was successfully approved!";
+                $msg = "Bug " . $ftitle . " was successfully marked as fixed!";
             }
 
         }
