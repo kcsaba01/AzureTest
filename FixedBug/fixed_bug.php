@@ -4,7 +4,7 @@
  * User: Csaba Keresztessy <0811994@rgu.ac.uk>
  * Date: 20/03/2016
  * Time: 22:00
- * Bug Fix Authorisation page for admin
+ * Page to mark a bug as fixed. Any user can mark a bug as fixed
  */
 include("../utility/connection.php");
 $msg = "";
