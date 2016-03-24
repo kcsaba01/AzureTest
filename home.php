@@ -23,7 +23,7 @@ include("/utility/check.php"); //if the user is an admin user, session will be f
 <header>
     <table class="bottomBorder" style="width:100%">
         <tr>
-            <th><a href="utility/logout.php"> <img align="left" id="bus_logo" height=150 src="businesslogo.png" alt="NoName Company Logo" /></th>
+            <th><a href="home.php"> <img align="left" id="bus_logo" height=150 src="businesslogo.png" alt="NoName Company Logo" /></th>
             <th><H1 align="right"><i>Welcome to NoName Company</i></H1></th>
         </tr>
     </table>
