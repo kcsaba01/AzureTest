@@ -30,7 +30,7 @@ include("../utility/check.php");
             <tr>
                 <td colspan="2" align="center" class="error"><?php echo $msg;?></td>
             </tr>
-            <tr>
+            <tr> <!--asking for the Bug ID-->
                 <td style="font-weight: bold">
                     <div align="right"><label for="rbugid">Bug ID</label></div>
                 </td>
@@ -54,7 +54,7 @@ include("../utility/check.php");
     if(isset($_POST["submit"]))
     {
         $rbugid = $_POST["rbugid"];
-        $rsql = "SELECT * FROM bugs WHERE bugID=$rbugid";
+        $rsql = "SELECT * FROM bugs WHERE bugID=$rbugid"; //retrieving Bug
         $rresult = mysqli_query($db, $rsql);
         if (mysqli_num_rows($rresult) > 0) {
             // output data of each row

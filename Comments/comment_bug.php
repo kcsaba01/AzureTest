@@ -32,7 +32,7 @@ include("submit_comment.php"); //php file that actually will update the DB
             <tr>
                 <td colspan="2" align="center" class="error"><?php echo $msg;?></td>
             </tr>
-            <tr> //Bug ID field
+            <tr> <!--Bug ID field-->
                 <td style="font-weight: bold">
                     <div align="right"><label for="bugid">Bug ID</label></div>
                 </td>
@@ -40,7 +40,7 @@ include("submit_comment.php"); //php file that actually will update the DB
                     <input name="bugid" type="number" class="input" size="35" required />
                 </td>
             </tr>
-            <tr> // Description of ID
+            <tr> <!-- Description of ID-->
                 <td height="23" style="font-weight: bold">
                     <div align="right">
                         <label for="commdesc">Description</label>
