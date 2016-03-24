@@ -3,17 +3,11 @@ $target_dir = "../uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 //if(isset($_POST["submit"])) {
-  if (mime_content_type($_FILES["fileToUpload"]["tmp_name"]) == "text/plain") {$check=1;}
-    else {$check=2;}
+  if (mime_content_type($_FILES["fileToUpload"]["tmp_name"]) == "text/plain") {$filetypeok=1;}
+    else {$filetype=0;}
     echo $check;
     echo "<BR>";
-    echo ($_FILES["fileToUpload"]["tmp_name"]);
-echo "<BR>";
-    echo ($target_file);
-
-echo "<BR>";
-echo (mime_content_type($_FILES["fileToUpload"]["tmp_name"]));
-    //$check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+    /$check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
     /**if($check !== false) {
         echo "File is an image - " . $check["mime"] . ".";
         $uploadOk = 1;
