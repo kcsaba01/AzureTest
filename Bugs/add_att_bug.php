@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: Csaba Keresztessy <0811994@rgu.ac.uk>
  * Date: 20/03/2016
- * Adding an attachement to a bug
+ * Adding an attachment to a bug
  */
 ?>
 <!doctype html>

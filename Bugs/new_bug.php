@@ -31,7 +31,7 @@ include("submit_bug.php");
             <tr>
                 <td colspan="2" align="center" class="error"><?php echo $msg;?></td>
             </tr>
-            <tr> //Bug title field
+            <tr> <!--Bug title field-->
                 <td style="font-weight: bold">
                     <div align="right"><label for="name">Bug title</label></div>
                 </td>
