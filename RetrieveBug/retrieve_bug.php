@@ -30,7 +30,6 @@ include("../utility/check.php");
             <tr>
                 <td colspan="2" align="center" class="error"><?php echo $msg;?></td>
             </tr>
-            //Bug ID input
             <tr>
                 <td style="font-weight: bold">
                     <div align="right"><label for="rbugid">Bug ID</label></div>
