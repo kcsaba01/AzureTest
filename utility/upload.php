@@ -6,9 +6,13 @@ $uploadOk = 1;
   if (mime_content_type($_FILES["fileToUpload"]["tmp_name"]) == "text/plain") {$check=1;}
     else {$check=2;}
     echo $check;
+    echo "<BR>";
     echo ($_FILES["fileToUpload"]["tmp_name"]);
+echo "<BR>";
     echo ($target_file);
-    echo (mime_content_type($_FILES["fileToUpload"]["tmp_name"]));
+
+echo "<BR>";
+echo (mime_content_type($_FILES["fileToUpload"]["tmp_name"]));
     //$check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
     /**if($check !== false) {
         echo "File is an image - " . $check["mime"] . ".";
