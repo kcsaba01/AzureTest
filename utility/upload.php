@@ -10,6 +10,7 @@ $uploadOk = 1;
     //echo $check;
     echo ($_FILES["fileToUpload"]["tmp_name"]);
     echo ($target_file);
+    echo (mime_content_type($_FILES["fileToUpload"]["tmp_name"]));
     //$check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
     /**if($check !== false) {
         echo "File is an image - " . $check["mime"] . ".";
