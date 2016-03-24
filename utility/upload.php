@@ -2,12 +2,10 @@
 $target_dir = "../uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
-//$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
-// Check if image file is a actual image or fake image
 //if(isset($_POST["submit"])) {
-  //  if (mime_content_type($_FILES["fileToUpload"]["tmp_name"]) == "text/plain") {$check=1;}
-    //else {$check=2;}
-    //echo $check;
+  if (mime_content_type($_FILES["fileToUpload"]["tmp_name"]) == "text/plain") {$check=1;}
+    else {$check=2;}
+    echo $check;
     echo ($_FILES["fileToUpload"]["tmp_name"]);
     echo ($target_file);
     echo (mime_content_type($_FILES["fileToUpload"]["tmp_name"]));
