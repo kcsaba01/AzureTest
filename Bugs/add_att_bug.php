@@ -28,16 +28,6 @@
         <input type="file" name="fileToUpload" id="fileToUpload">
         <input type="submit" value="Upload Image" name="submit">
     </form>
-    <?php
-    chmod("../uploads", 0666);
-    echo substr(sprintf('%o', fileperms('/uploads')), -4);
-    echo "done";
-    $filename = '../uploads';
-    if (is_writable($filename)) {
-    echo 'The file is writable';
-    } else {
-    echo 'The file is not writable';
-    };?>
 </main>
 </body>
 <footer>
