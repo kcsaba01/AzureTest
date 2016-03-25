@@ -117,7 +117,7 @@ body
 	font-size:25px;
 	font-weight:bold;
 }
-input[type=text],input[type=password],input[type=email], input[type=number], input[type=date], input[type=file]
+input[type=text],input[type=password],input[type=email], input[type=number], input[type=date]
 {
 	width:380px;
 	padding:10px;
