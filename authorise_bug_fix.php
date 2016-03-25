@@ -53,7 +53,7 @@ include("Bugs/authbugfix.php");
         <tr>
             <td><H2 align="left"> <i>Contact Helpdesk</i></H2> <p align="left">512 University Street<br>Aberdeen AB10 7QG<br> 01224 26<b> 0000</b></p></td>
             <td><a href="utility/AvailableBugs.php"><H2 align="center"> Available Bugs</H2></td>
-            <td><H2 align="right"> <bi> Bug auth. page</bi></H2></td>
+            <td><H2 align="right"> <b> Bug auth. page</b></H2></td>
         </tr>
     </table>
 
