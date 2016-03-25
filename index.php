@@ -46,13 +46,11 @@ if ((isset($_SESSION['username']) != ''))
             </div>
         </div>
         <br><br>
+        <H4 align="centre"> <b><i> Hint!After login, by clicking on the login you can return to the main page</b></i></H4>
     </main>
 </body>
 <footer>
     <table class="topBorder" style="width:100%">
-        <tr>
-            <td><p align="centre"> <b><i> Hint!After login, by clicking on the login you can return to the main page</b></i></p></td>
-        </tr>
         <tr>
             <td><H2 align="left"> <i>Contact Helpdesk</i></H2> <p align="left">512 University Street<br>Aberdeen AB10 7QG<br> 01224 26<b> 0000</b></p></td>
             <td><H2 align="right"> <b> Login/Registration page</b></H2></td>
