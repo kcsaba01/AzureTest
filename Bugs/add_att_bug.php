@@ -33,10 +33,11 @@ include('../utility/upload.php');
             <label>Select file to upload:</label><br><br>
             <input type="file" name="fileToUpload" id="fileToUpload">
             <br><br>
-            <input type="submit" value="Upload File" name="submit">
+            <input type="submit" value="Upload File" name="submit"> <br>
         </form>
         <div class="error"><?php echo $msg;?></div>
         </div>
+        <p> File naming convention: bugID-username.txt. A file name validation is not performed, however it will be easier to identify the file in the future</p>
     </div>
 </main>
 </body>
