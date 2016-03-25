@@ -5,6 +5,7 @@
  * Date: 20/03/2016
  * Adding an attachment to a bug
  */
+include('../utility/upload.php');
 ?>
 <!doctype html>
 <html>
