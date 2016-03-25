@@ -6,7 +6,7 @@
  * Time: 22:05
  * Checks if a user is already registered
  */
-include('utility/connection.php');
+include('connection.php');
 session_start();
 $user_check=$_SESSION['username'];
 
