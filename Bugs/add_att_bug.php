@@ -33,7 +33,7 @@ include('../utility/upload.php');
             <label> Bug ID:</label>
             <input type="number" name="bugID" required />
             <label>Select file to upload:</label><br><br>
-            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="file" name="fileToUpload" id="fileToUpload" required />
             <br><br>
             <input type="submit" value="Upload File" name="submit"> <br>
         </form>
