@@ -36,10 +36,10 @@ include("/utility/check.php"); //if the user is an admin user, session will be f
             <br><br>
             <table style="width:300">
                 <tr>
-                    <td><a href="RetrieveBug/retrieve_bug.php"> <H4>Retrieve Bug</H4></td>
+                    <td><a href="Bugs/new_bug.php"> <H4>Log New Bug</H4></td>
                 </tr>
                 <tr>
-                    <td><a href="Bugs/new_bug.php"> <H4>Log New Bug</H4></td>
+                    <td><a href="RetrieveBug/retrieve_bug.php"> <H4>Retrieve Bug</H4></td>
                 </tr>
                 <tr>
                     <td><a href="FixedBug/fixed_bug.php"> <H4>Mark Bug Fixed</H4></td>
