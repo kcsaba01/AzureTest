@@ -41,7 +41,7 @@ include("../utility/check.php");
         </form>
         <div class="error"><?php echo $msg;?></div>
         </div>
-        <H2> File naming convention: <i>bugID-username.txt</i>. A file name validation is not performed, however it will be easier to identify the file in the future</H2>
+        <H2> File naming convention: <i>bugID-username.txt</i>. <br>A file name validation is not performed, however it will be easier to identify the file in the future</H2>
     </div>
 </main>
 </body>
