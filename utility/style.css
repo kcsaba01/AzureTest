@@ -117,7 +117,7 @@ body
 	font-size:25px;
 	font-weight:bold;
 }
-.userBox link
+.userBox link, link:visited
 {
 	text-decoration: none;
 }
