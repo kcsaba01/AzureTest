@@ -25,11 +25,13 @@
     </table>
 </header>
 <main>
-    <?php
-    $dir    = '../uploads';
-    $files2 = scandir($dir);
-    print_r($files2);
-    ?>
+    <pre>
+        <?php
+        $dir    = '../uploads';
+        $files2 = scandir($dir);
+        print_r($files2);
+        ?>
+    </pre>
 </main>
 </body>
 <footer>
