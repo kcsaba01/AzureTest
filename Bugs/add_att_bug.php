@@ -6,6 +6,8 @@
  * Adding an attachment to a bug
  */
 include('../utility/upload.php');
+include("../utility/connection.php");
+include("../utility/check.php");
 ?>
 <!doctype html>
 <html>
@@ -39,7 +41,7 @@ include('../utility/upload.php');
         </form>
         <div class="error"><?php echo $msg;?></div>
         </div>
-        <H2> File naming convention: <b>bugID-username.txt</b>. A file name validation is not performed, however it will be easier to identify the file in the future</H2>
+        <H2> File naming convention: <i>bugID-username.txt</i>. A file name validation is not performed, however it will be easier to identify the file in the future</H2>
     </div>
 </main>
 </body>
