@@ -46,7 +46,7 @@ if ((isset($_SESSION['username']) != ''))
             </div>
         </div>
         <br><br>
-        <H4 align="centre"> <b><i> Hint!After login, by clicking on the login you can return to the main page</b></i></H4>
+        <H4> <b><i> Hint!After login, by clicking on the logo you can return to the main page</b></i></H4>
     </main>
 </body>
 <footer>
