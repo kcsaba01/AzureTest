@@ -26,7 +26,7 @@
 </header>
 <main>
     <H2> Content of the uploads folder:</H2>
-    <br><br>
+    <br>
     <pre>
         <?php
         $dir    = '../uploads';
