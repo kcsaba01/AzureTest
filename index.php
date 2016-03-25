@@ -52,8 +52,8 @@ if ((isset($_SESSION['username']) != ''))
     <table class="topBorder" style="width:100%">
          <tr>
             <td><H2 align="left"> <i>Contact Helpdesk</i></H2> <p align="left">512 University Street<br>Aberdeen AB10 7QG<br> 01224 26<b> 0000</b></p></td>
-            <td><H2 align="centre"> <bi> Hint!After login, by clicking on the logo <br>you can return to the main page</bi></H2></td>
-            <td><H2 align="right"> <bi> Login/Registration page</bi></H2></td>
+            <td><p align="centre"> <b> Hint!After login, by clicking on the logo <br>you can return to the main page</b></p></td>
+            <td><H2 align="right"> <b> Login/Registration page</b></H2></td>
          </tr>
     </table>
 
