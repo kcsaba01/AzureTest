@@ -28,6 +28,8 @@
         <input type="file" name="fileToUpload" id="fileToUpload">
         <input type="submit" value="Upload Image" name="submit">
     </form>
+    <br><br><br><br>#
+    <?php echo $msg; ?>
 </main>
 </body>
 <footer>

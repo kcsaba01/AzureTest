@@ -6,7 +6,7 @@
  * Time: 22:04
  * adding users to the database
  */
-/**$msg = "";
+$msg = "";
 if(isset($_POST["submit"]))
 {
     $name = $_POST["name"];
@@ -38,13 +38,5 @@ if(isset($_POST["submit"]))
         }
 
     }
-}*/
-<?php
-$dir    = '/';
-$files1 = scandir($dir);
-$files2 = scandir($dir, 1);
-
-print_r($files1);
-print_r($files2);
-?>
+}
 ?>
