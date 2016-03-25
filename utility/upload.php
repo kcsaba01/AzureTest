@@ -22,6 +22,7 @@ if(isset($_POST["submit"]))
     $uresult1=mysqli_query($db,$uuseridq);
     $uuseridr=mysqli_fetch_assoc($uresult1);
     $uuserid=$uuseridr["userID"];
+    //variable that contains the file name
     $ufilename=basename($_FILES["fileToUpload"]["name"]);
 }
 // Check if file already exists
@@ -47,7 +48,7 @@ if ($uploadOk != 0)
 {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file))
     {
-
+        //updating the database
         $query = mysqli_query($db, "INSERT INTO attachments (URL, userID, bugID) VALUES ('$ufilename', '$uuserid', $ubugid)") or die(mysqli_error($db));
         if($query)
         {
@@ -58,5 +59,4 @@ if ($uploadOk != 0)
         $msg = "Sorry, there was an error uploading your file.";
     }
 } else
-
 ?>
