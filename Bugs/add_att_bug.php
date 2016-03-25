@@ -30,14 +30,16 @@ include('../utility/upload.php');
         <h3>Upload a file</h3>
         <br><br>
         <form action="" method="post" enctype="multipart/form-data" >
-            <H3>Select file to upload:</H3><br><br>
+            <label> Bug ID:</label>
+            <input type="number" name="bugID" required />
+            <label>Select file to upload:</label><br><br>
             <input type="file" name="fileToUpload" id="fileToUpload">
             <br><br>
             <input type="submit" value="Upload File" name="submit"> <br>
         </form>
         <div class="error"><?php echo $msg;?></div>
         </div>
-        <p> File naming convention: <b>bugID-username.txt<b>. A file name validation is not performed, however it will be easier to identify the file in the future</p>
+        <p> File naming convention: <b>bugID-username.txt</b>. A file name validation is not performed, however it will be easier to identify the file in the future</p>
     </div>
 </main>
 </body>
