@@ -3,7 +3,6 @@
  * Created by PhpStorm.
  * User: Csaba Keresztessy 0811994@rgu.ac.uk
  * Date: 20/03/2016
- * Time: 00:07
  * This is a helper file that will print all the records in the bugs table
  */
 include("../utility/connection.php");
@@ -36,7 +35,7 @@ include("../utility/connection.php");
         }
     } else {
         echo "0 records";
-    }
+      }
     ?>
 </main>
 </body>

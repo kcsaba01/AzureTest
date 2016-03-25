@@ -3,7 +3,6 @@
  * Created by PhpStorm.
  * User: Csaba Keresztessy 0811994@rgu.ac.uk
  * Date: 20/03/2016
- * Time: 00:07
  * This is a helper file that will print all the records in the users table
  */
 include("../utility/connection.php");
@@ -14,7 +13,6 @@ if ($login_user !="admin") //check if the user is admin, if not a Not Authorised
 }
 else
 ?>
-
 <!doctype html>
 <html>
 <head>
@@ -33,6 +31,7 @@ else
 </header>
 <main>
     <?php
+    //for security reasons the password field is left out
     $sql = "SELECT userID, username, email, phone, approved FROM users";
     $result = mysqli_query($db, $sql);
     if (mysqli_num_rows($result) > 0) {

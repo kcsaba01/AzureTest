@@ -29,6 +29,7 @@ include('../utility/upload.php');
         <div class="userBox">
         <h3>Upload a file</h3>
         <br><br>
+        <!-- input form for the BugID and the file-->    
         <form action="" method="post" enctype="multipart/form-data" >
             <label> Bug ID:</label>
             <input type="number" name="bugID" required />
@@ -39,6 +40,7 @@ include('../utility/upload.php');
         </form>
         <div class="error"><?php echo $msg;?></div>
         </div>
+        <!--help message for the user-->
         <H2> File naming convention: <i>bugID-username.txt</i>. <br>A file name validation is not performed, however it will be easier to identify the file in the future</H2>
     </div>
 </main>

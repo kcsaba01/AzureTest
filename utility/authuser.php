@@ -3,7 +3,6 @@
  * Created by PhpStorm.
  * User: Csaba Keresztessy <0811994@rgu.ac.uk>
  * Date: 20/03/2016
- * Time: 22:05
  * Authorises a user. Only for "admin user"
  */
 include('connection.php');
@@ -30,7 +29,6 @@ if(isset($_POST["submit"]))
             if ($query) {
                 $msg = $username . " was successfully approved!";
             }
-
         }
     }
 }

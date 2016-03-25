@@ -1,11 +1,17 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Csaba Keresztessy <0811994@rgu.ac.uk>
+ * Date: 23/03/2016
+ * file that handles the file upload
+ */
 include("../utility/connection.php");
 include("../utility/check.php");
 $target_dir = "../uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-$uploadOk = 1;
+$uploadOk = 1; //variable to check the upload process
 $fileType = pathinfo($target_file,PATHINFO_EXTENSION);
-$msg="";
+$msg=""; //variable used to communicate with the end user
 if(isset($_POST["submit"]))
 {
 //check for file content

@@ -3,7 +3,6 @@
  * Created by PhpStorm.
  * User: Csaba Keresztessy <0811994@rgu.ac.uk>
  * Date: 20/03/2016
- * Time: 20:25
  * Registration page for new users
  */
 include("utility/connection.php");
@@ -27,6 +26,7 @@ include("utility/submit.php");
     </table>
 </header>
 <main>
+<!--registration form with some mandatory fields-->
 <form method="post" action="">
     <table width="100%" allign =center border="0" cellpadding="10" cellspacing="10">
             <tr>

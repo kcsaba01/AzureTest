@@ -3,7 +3,6 @@
  * Created by PhpStorm.
  * User: Csaba Keresztessy 0811994@rgu.ac.uk
  * Date: 20/03/2016
- * Time: 00:07
  * This is a helper file that will display the content of the uploads folder
  */
 ?>
@@ -25,6 +24,7 @@
     </table>
 </header>
 <main>
+    <!--displays the content of the uploads folder-->
     <H2> Content of the uploads folder:</H2>
     <br>
     <pre>
