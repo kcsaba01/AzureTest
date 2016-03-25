@@ -33,7 +33,7 @@ else
 </header>
 <main>
     <?php
-    $sql = "SELECT * FROM users";
+    $sql = "SELECT userID, username, email, phone, approved FROM users";
     $result = mysqli_query($db, $sql);
     if (mysqli_num_rows($result) > 0) {
         // output data of each row
