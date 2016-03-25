@@ -13,8 +13,6 @@ if(isset($_POST["submit"]))
     {
         $uploadOk = 0;
     }
-    echo $filetypeok;
-    echo "<BR>";
 }
 // Check if file already exists
 if (file_exists($target_file))
