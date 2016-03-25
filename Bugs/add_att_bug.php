@@ -37,7 +37,7 @@ include('../utility/upload.php');
         </form>
         <div class="error"><?php echo $msg;?></div>
         </div>
-        <p> File naming convention: bugID-username.txt. A file name validation is not performed, however it will be easier to identify the file in the future</p>
+        <p> File naming convention: <b>bugID-username.txt<b>. A file name validation is not performed, however it will be easier to identify the file in the future</p>
     </div>
 </main>
 </body>
