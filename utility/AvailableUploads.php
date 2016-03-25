@@ -28,7 +28,7 @@
     <?php
     $dir    = '../uploads';
     $files2 = scandir($dir, 1);
-    print_r($files2);
+    print_r($files2."<br>");
     ?>
 </main>
 </body>
