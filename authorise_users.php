@@ -8,13 +8,12 @@
  */
  //if the user is not admin, a not authorised page is displayed
 include ("utility/authuser.php");
-$test= $_SESSION['username'];
-echo $test;
-//if ($_SESSION['username'] !="admin")
-//{
- //  header("location: noauth.php");
-//}
-//else
+include("utility/check.php");
+if ($login_user !="admin") //check if the user is admin, if not a Not Authorised page is displayed
+{
+    header("location: /noauth.php");
+}
+else
 ?>
 <!doctype html>
 <html>
