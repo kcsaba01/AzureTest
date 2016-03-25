@@ -6,8 +6,6 @@
  * Adding an attachment to a bug
  */
 include('../utility/upload.php');
-include("../utility/connection.php");
-include("../utility/check.php");
 ?>
 <!doctype html>
 <html>
