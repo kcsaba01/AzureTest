@@ -48,7 +48,7 @@ if ($uploadOk != 0)
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file))
     {
         $msg = "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-        $query = mysqli_query($db, "INSERT INTO attachments (URL, userID, bugID) VALUES ('$ufilename', '$uuserID', $ubugid)") or die(mysqli_error($db));
+        $query = mysqli_query($db, "INSERT INTO attachments (URL, userID, bugID) VALUES ('$ufilename', '$uuserid', $ubugid)") or die(mysqli_error($db));
         if($query)
         {
             $msg = "Thank You! The comment was added."; //confirming the update
