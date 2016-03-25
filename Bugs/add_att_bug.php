@@ -30,7 +30,7 @@ include('../utility/upload.php');
         <h3>Upload a file</h3>
         <br><br>
         <form action="" method="post" enctype="multipart/form-data" >
-            <label>Select file to upload:</label><br><br>
+            <H3>Select file to upload:</H3><br><br>
             <input type="file" name="fileToUpload" id="fileToUpload">
             <br><br>
             <input type="submit" value="Upload File" name="submit"> <br>
