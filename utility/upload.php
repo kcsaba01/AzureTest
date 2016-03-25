@@ -34,11 +34,7 @@ if($fileType != "txt" && $fileType != "" )
     $uploadOk = 0;
 }
 // Check if $uploadOk is set to 0 by an error
-if ($uploadOk == 0)
-{
-    $msg = "Sorry, your file does not meet the requirements.";
-// if everything is ok, try to upload file
-} else
+if ($uploadOk != 0)
 {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file))
     {
@@ -47,5 +43,6 @@ if ($uploadOk == 0)
     {
         $msg = "Sorry, there was an error uploading your file.";
     }
-}
+} else
+
 ?>
