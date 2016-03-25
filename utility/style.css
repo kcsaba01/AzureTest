@@ -117,10 +117,6 @@ body
 	font-size:25px;
 	font-weight:bold;
 }
-.userBox link, link:visited
-{
-	text-decoration: none;
-}
 input[type=text],input[type=password],input[type=email], input[type=number], input[type=date]
 {
 	width:380px;
