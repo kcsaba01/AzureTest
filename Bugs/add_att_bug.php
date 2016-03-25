@@ -24,13 +24,19 @@ include('../utility/upload.php');
     </table>
 </header>
 <main>
-    <form action="" method="post" enctype="multipart/form-data">
-        <label>Select image to upload:</label>
-        <input type="file" name="fileToUpload" id="fileToUpload">
-        <input type="submit" value="Upload File" name="submit">
-    </form>
-    <br><br><br><br>#
-    <?php echo $msg; ?>
+    <div align="center">
+        <br><br>
+        <div class="userBox">
+        <h3>Upload a file</h3>
+        <br><br>
+        <form action="" method="post" enctype="multipart/form-data" >
+            <label>Select file to upload:</label><br><br>
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" value="Upload File" name="submit">
+        </form>
+        <div class="error"><?php echo $msg;?></div>
+        </div>
+    </div>
 </main>
 </body>
 <footer>
